@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "D:\\Cours\\3-HELHA 2019-2020\\TI\\Rider\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "projectName": "CuisinHELHa",
+    "projectPath": "D:\\Cours\\3-HELHA 2019-2020\\TI\\Rider\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "outputPath": "D:\\Cours\\3-HELHA 2019-2020\\TI\\Rider\\CuisinHELHa\\CuisinHELHa\\obj\\",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp3.0"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.0": {
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
