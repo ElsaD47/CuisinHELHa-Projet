@@ -8,11 +8,62 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/PicturesDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/RecipesDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsedIngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsersDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/IngredientsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/PicturesDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/UsedIngredientsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/IngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/PicturesDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsedIngredientsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/PicturesDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/UsedIngredientsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Startup.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/IngredientsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/IngredientsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/RecipesDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/UsersDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/UsersController.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1Tvawama5n2lpYuf8qexdnutVKI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -69,14 +120,26 @@
       <option name="presentableId" value="Default" />
       <updated>1574343261234</updated>
       <workItem from="1574343262716" duration="136000" />
+      <workItem from="1574344560514" duration="17766000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

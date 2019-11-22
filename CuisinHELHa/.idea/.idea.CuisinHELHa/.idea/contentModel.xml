@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\elsad\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\elsad\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CuisinHELHa.761915136.00" t="ExcludeRecursive" />
-    <e p="D:\Cours\3-HELHA 2019-2020\TI\Rider\CuisinHELHa" t="IncludeFlat">
+    <e p="C:\CuisinHELHa Projet\CuisinHELHa" t="IncludeFlat">
       <e p="CuisinHELHa" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="IngredientsController.cs" t="Include" />
+          <e p="RecipesController.cs" t="Include" />
+          <e p="UsersController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>
         <e p="CuisinHELHa.csproj" t="IncludeRecursive" />
+        <e p="DAO" t="Include">
+          <e p="IngredientsDAO.cs" t="Include" />
+          <e p="PicturesDAO.cs" t="Include" />
+          <e p="RecipesDAO.cs" t="Include" />
+          <e p="ReviewsDAO.cs" t="Include" />
+          <e p="StepsDAO.cs" t="Include" />
+          <e p="UsedIngredientsDAO.cs" t="Include" />
+          <e p="UsersDAO.cs" t="Include" />
+        </e>
+        <e p="DTO" t="Include">
+          <e p="IngredientsDTO.cs" t="Include" />
+          <e p="PicturesDTO.cs" t="Include" />
+          <e p="RecipesDTO.cs" t="Include" />
+          <e p="ReviewsDTO.cs" t="Include" />
+          <e p="StepsDTO.cs" t="Include" />
+          <e p="UsedIngredientsDTO.cs" t="Include" />
+          <e p="UsersDTO.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="DataBase.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
@@ -19,6 +41,7 @@
             </e>
           </e>
         </e>
+        <e p="Pages" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
@@ -29,5 +52,7 @@
       <e p="CuisinHELHa.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\elsad\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\elsad\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CuisinHELHa.2064317652.00" t="ExcludeRecursive" />
   </component>
 </project>

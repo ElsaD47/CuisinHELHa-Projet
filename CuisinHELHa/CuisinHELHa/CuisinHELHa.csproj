@@ -1,10 +1,32 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="Pages" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\DTO\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Controllers\DTO\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Controllers\DTO\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Controllers\DTO\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.0.0" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.0-preview3.19551.4" />
     </ItemGroup>
 
 </Project>
