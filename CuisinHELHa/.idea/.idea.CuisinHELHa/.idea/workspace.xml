@@ -21,39 +21,46 @@
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsersDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/IngredientsDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/PicturesDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/ReviewsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/UsedIngredientsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/PicturesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/IngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/PicturesDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsedIngredientsDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/PicturesDTO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/UsedIngredientsDTO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Startup.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/RecipesDTO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DTO/IngredientsDTO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/IngredientsDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/RecipesDTO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DTO/UsersDTO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/UsedIngredientsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/PicturesController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/PicturesDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/PicturesDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/UsersController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/ReviewsController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
       </list>
     </option>
   </component>
@@ -64,6 +71,7 @@
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -109,6 +117,9 @@
       </method>
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -121,6 +132,10 @@
       <updated>1574343261234</updated>
       <workItem from="1574343262716" duration="136000" />
       <workItem from="1574344560514" duration="17766000" />
+      <workItem from="1574526446948" duration="8102000" />
+      <workItem from="1574615238055" duration="6549000" />
+      <workItem from="1574762886976" duration="1354000" />
+      <workItem from="1574781741728" duration="8560000" />
     </task>
     <servers />
   </component>
@@ -134,7 +149,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

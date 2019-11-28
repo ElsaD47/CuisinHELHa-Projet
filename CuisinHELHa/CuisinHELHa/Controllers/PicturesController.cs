@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using CuisinHELHa.DAO;
 using CuisinHELHa.DTO;
 using Microsoft.AspNetCore.Mvc;
@@ -8,25 +7,24 @@ namespace CuisinHELHa.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class RecipesController : ControllerBase
+    public class PicturesController : ControllerBase
     {
-
         [HttpGet]
-        public IEnumerable<RecipesDTO> Get()
+        public IEnumerable<PicturesDTO> Get()
         {
-            return RecipesDAO.Query();
+            return PicturesDAO.Query();
         }
 
         [HttpPost]
-        public RecipesDTO Post([FromBody] RecipesDTO recipesDto)
+        public PicturesDTO Post([FromBody] PicturesDTO picturesDto)
         {
-            return RecipesDAO.Post(recipesDto);
+            return PicturesDAO.Post(picturesDto);
         }
 
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            if (RecipesDAO.Delete(id))
+            if (PicturesDAO.Delete(id))
             {
                 return Ok();
             }
@@ -35,15 +33,14 @@ namespace CuisinHELHa.Controllers
         }
 
         [HttpPut]
-        public ActionResult Put([FromBody] RecipesDTO recipesDto)
+        public ActionResult Put([FromBody] PicturesDTO picturesDto)
         {
-            if (RecipesDAO.Update(recipesDto))
+            if (PicturesDAO.Update(picturesDto))
             {
                 return Ok();
             }
 
             return BadRequest();
         }
-        
     }
 }

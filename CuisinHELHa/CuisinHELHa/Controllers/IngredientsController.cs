@@ -33,9 +33,9 @@ namespace CuisinHELHa.Controllers
         }
 
         [HttpPut]
-        public ActionResult Put([FromBody] IngredientsDTO ingredientDTO)
+        public ActionResult Put([FromBody] IngredientsDTO ingredientDto)
         {
-            if (IngredientsDAO.Update(ingredientDTO))
+            if (IngredientsDAO.Update(ingredientDto))
             {
                 return Ok();
             }

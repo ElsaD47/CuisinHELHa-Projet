@@ -80,6 +80,43 @@ namespace CuisinHELHa.DAO
             }
             return recipe;
         }
-        
+
+        public static bool Delete(int id)
+        {
+            bool hasBeenDeleted = false;
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_DELETE;
+                command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", id);
+                hasBeenDeleted = command.ExecuteNonQuery() == 1;
+            }
+
+            return hasBeenDeleted;
+        }
+
+        public static bool Update(RecipesDTO recipe)
+        {
+            bool hasBeenChanged = false;
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_UPDATE;
+                command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", recipe.IdRecipe);
+                command.Parameters.AddWithValue($@"{FIELD_ID_USER}", recipe.IdUser);
+                command.Parameters.AddWithValue($@"{FIELD_PERSONS}", recipe.Persons);
+                command.Parameters.AddWithValue($@"{FIELD_SUMMARY}", recipe.Summary);
+                command.Parameters.AddWithValue($@"{FIELD_POSTDATE}", recipe.PostDate);
+                command.Parameters.AddWithValue($@"{FIELD_PREPTIME}", recipe.PrepTime);
+                command.Parameters.AddWithValue($@"{FIELD_NAMERECIPE}", recipe.NameRecipe);
+                command.Parameters.AddWithValue($@"{FIELD_RECIPETYPE}", recipe.RecipeType);
+                command.Parameters.AddWithValue($@"{FIELD_SPICESRATE}", recipe.SpiceRate);
+                hasBeenChanged = command.ExecuteNonQuery() == 1;
+            }
+
+            return hasBeenChanged;
+        }
     }
 }

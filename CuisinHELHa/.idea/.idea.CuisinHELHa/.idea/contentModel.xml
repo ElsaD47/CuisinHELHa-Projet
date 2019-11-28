@@ -8,7 +8,10 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="IngredientsController.cs" t="Include" />
+          <e p="PicturesController.cs" t="Include" />
           <e p="RecipesController.cs" t="Include" />
+          <e p="ReviewsController.cs" t="Include" />
+          <e p="StepsController.cs" t="Include" />
           <e p="UsersController.cs" t="Include" />
           <e p="WeatherForecastController.cs" t="Include" />
         </e>

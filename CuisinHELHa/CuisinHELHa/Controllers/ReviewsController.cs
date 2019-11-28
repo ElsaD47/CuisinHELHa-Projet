@@ -7,24 +7,25 @@ namespace CuisinHELHa.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class ReviewsController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<UsersDTO> Get()
+        public IEnumerable<ReviewsDTO> Get()
         {
-            return UsersDAO.Query();
+            return ReviewsDAO.Query();
         }
 
+        //?
         [HttpPost]
-        public UsersDTO Post([FromBody] UsersDTO usersDto)
+        public ReviewsDTO Post([FromBody] ReviewsDTO reviewsDto)
         {
-            return UsersDAO.Post(usersDto);
+            return ReviewsDAO.Post(reviewsDto);
         }
 
-        [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        [HttpDelete("{idUser}/{idRecipe}")]
+        public ActionResult Delete(int idUser, int idRecipe)
         {
-            if (UsersDAO.Delete(id))
+            if (ReviewsDAO.Delete(idUser, idRecipe))
             {
                 return Ok();
             }
@@ -33,9 +34,9 @@ namespace CuisinHELHa.Controllers
         }
 
         [HttpPut]
-        public ActionResult Put([FromBody] UsersDTO usersDto)
+        public ActionResult Put([FromBody] ReviewsDTO reviewsDto)
         {
-            if (UsersDAO.Update(usersDto))
+            if (ReviewsDAO.Update(reviewsDto))
             {
                 return Ok();
             }
