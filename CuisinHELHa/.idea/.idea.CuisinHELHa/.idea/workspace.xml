@@ -55,12 +55,12 @@
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/ReviewsController.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +135,8 @@
       <workItem from="1574526446948" duration="8102000" />
       <workItem from="1574615238055" duration="6549000" />
       <workItem from="1574762886976" duration="1354000" />
-      <workItem from="1574781741728" duration="8560000" />
+      <workItem from="1574781741728" duration="10796000" />
+      <workItem from="1575212273375" duration="3807000" />
     </task>
     <servers />
   </component>

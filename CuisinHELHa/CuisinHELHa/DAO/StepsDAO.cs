@@ -11,22 +11,24 @@ namespace CuisinHELHa.DAO
         public static readonly string FIELD_ID_STEP = "idStep";
         public static readonly string FIELD_ID_RECIPE = "idRecipe";
         public static readonly string FIELD_STEP = "step";
+        public static readonly string FIELD_STEPNUMBER = "stepNumber";
         
         //Queries
         private static readonly string REQ_QUERY
             = $"SELECT * FROM {TABLE_NAME}";
 
         private static readonly string REQ_POST
-            = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_RECIPE}, {FIELD_STEP}) " +
+            = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_RECIPE}, {FIELD_STEP}, {FIELD_STEPNUMBER}) " +
               $"OUTPUT Inserted.{FIELD_ID_STEP} " +
-              $"VALUES(@{FIELD_ID_RECIPE}, @{FIELD_STEP})";
+              $"VALUES(@{FIELD_ID_RECIPE}, @{FIELD_STEP}, @{FIELD_STEPNUMBER})";
 
         private static readonly string REQ_DELETE
             = $"DELETE FROM {TABLE_NAME} WHERE {FIELD_ID_STEP} = @{FIELD_ID_STEP}";
 
         private static readonly string REQ_UPDATE
             = $"UPDATE {TABLE_NAME} SET {FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}," +
-              $"{FIELD_STEP} = @{FIELD_STEP} " +
+              $"{FIELD_STEP} = @{FIELD_STEP}," +
+              $"{FIELD_STEPNUMBER} = @{FIELD_STEPNUMBER} "+
               $"WHERE {FIELD_ID_STEP} =@{FIELD_ID_STEP}";
         
         public static List<StepsDTO> Query()
@@ -58,6 +60,7 @@ namespace CuisinHELHa.DAO
 
                 command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", step.IdRecipe);
                 command.Parameters.AddWithValue($@"{FIELD_STEP}", step.Step);
+                command.Parameters.AddWithValue($@"{FIELD_STEPNUMBER}", step.StepNumber);
                 step.IdStep = (int) command.ExecuteScalar();
             }
 
@@ -91,7 +94,7 @@ namespace CuisinHELHa.DAO
                 command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", step.IdRecipe);
                 command.Parameters.AddWithValue($@"{FIELD_STEP}", step.Step);
                 command.Parameters.AddWithValue($@"{FIELD_ID_STEP}", step.IdStep);
-
+                command.Parameters.AddWithValue($@"{FIELD_STEPNUMBER}", step.StepNumber);
                 hasBeenChanged = command.ExecuteNonQuery() == 1;
 
             }
