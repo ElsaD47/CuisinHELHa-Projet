@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
+    "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
   },
   "projects": {
-    "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
+    "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "projectName": "CuisinHELHa",
-        "projectPath": "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
-        "packagesPath": "C:\\Users\\elsad\\.nuget\\packages\\",
-        "outputPath": "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\obj\\",
+        "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\elsad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Niborobin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -39,6 +39,10 @@
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Microsoft.Azure.Services.AppAuthentication": {
+              "target": "Package",
+              "version": "[1.3.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
