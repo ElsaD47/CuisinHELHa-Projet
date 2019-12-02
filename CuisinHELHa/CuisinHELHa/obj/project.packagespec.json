@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
     "projectName": "CuisinHELHa",
-    "projectPath": "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
-    "outputPath": "C:\\CuisinHELHa Projet\\CuisinHELHa\\CuisinHELHa\\obj\\",
+    "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
@@ -29,6 +29,10 @@
         "Microsoft.AspNetCore.SpaServices.Extensions": {
           "target": "Package",
           "version": "[3.0.0, )"
+        },
+        "Microsoft.Azure.Services.AppAuthentication": {
+          "target": "Package",
+          "version": "[1.3.1, )"
         },
         "System.Data.SqlClient": {
           "target": "Package",
