@@ -15,6 +15,8 @@ namespace CuisinHELHa
 {
     public class Startup
     {
+        private static readonly string PATH_ANGULAR = "wwwroot/js/Angular-Recettes";
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,7 +29,7 @@ namespace CuisinHELHa
         {
             services.AddControllers();
             
-            //services.AddSpaStaticFiles();
+            services.AddSpaStaticFiles(spa => spa.RootPath = PATH_ANGULAR);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,9 @@ namespace CuisinHELHa
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+            app.UseSpaStaticFiles();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -45,6 +50,8 @@ namespace CuisinHELHa
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            
+            app.UseSpa(spa => spa.Options.SourcePath = PATH_ANGULAR);
         }
     }
 }
