@@ -13,9 +13,20 @@ namespace CuisinHELHa.DAO
         public static readonly string FIELD_RATE = "rate";
         public static readonly string FIELD_REVIEW_MESSAGE = "reviewMessage";
         
+        private static readonly string TABLE_USER_NAME = "users";
+        public static readonly string FIELD_USER_PSEUDO = "pseudo";
+        
+        private static readonly string TABLE_RECIPE_NAME = "recipes";
+        
         //Queries
         private static readonly string REQ_QUERY
             = $"SELECT * FROM {TABLE_NAME}";
+
+        private static readonly string REQ_QUERY_BY_RECIPE_WITH_PSEUDO 
+            = $"SELECT rev.*, u.{FIELD_USER_PSEUDO} FROM {TABLE_NAME} rev " +
+              $"JOIN {TABLE_RECIPE_NAME} rec ON rev.{FIELD_ID_RECIPE} = rec.{FIELD_ID_RECIPE} " +
+              $"JOIN {TABLE_USER_NAME} u ON rev.{FIELD_ID_USER} = u.{FIELD_ID_USER} " +
+              $"WHERE rec.{FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}";
 
         private static readonly string REQ_POST
             = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_USER}, {FIELD_ID_RECIPE}, {FIELD_RATE}, {FIELD_REVIEW_MESSAGE}) " +
@@ -47,6 +58,26 @@ namespace CuisinHELHa.DAO
                 }
             }
 
+            return reviews;
+        }
+        
+        public static List<ReviewsPseudoDTO> QueryByRecipeWithPseudo(int id)
+        {
+            List<ReviewsPseudoDTO> reviews = new List<ReviewsPseudoDTO>();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_BY_RECIPE_WITH_PSEUDO;
+
+                command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", id);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    reviews.Add(new ReviewsPseudoDTO(reader));
+                }
+            }
             return reviews;
         }
         

@@ -8,11 +8,14 @@ using CuisinHELHa.DAO;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Hosting;
 
 namespace CuisinHELHa
 {
     public class Startup
     {
+        private static readonly string PATH_ANGULAR = "wwwroot/js/Angular-Recettes";
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -55,11 +58,22 @@ namespace CuisinHELHa
 
             // configure DI for application services
             services.AddScoped<IUsersDAO, UsersDAO>();
+            services.AddSpaStaticFiles(spa => spa.RootPath = PATH_ANGULAR);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseStaticFiles();
+            app.UseSpaStaticFiles();
+
+            app.UseHttpsRedirection();
+
             app.UseRouting();
 
             // global cors policy
@@ -74,6 +88,9 @@ namespace CuisinHELHa
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllers();
             });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            
+            app.UseSpa(spa => spa.Options.SourcePath = PATH_ANGULAR);
         }
     }
 }

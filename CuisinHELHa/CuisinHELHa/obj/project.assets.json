@@ -7085,11 +7085,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
       "projectName": "CuisinHELHa",
       "projectPath": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
       "packagesPath": "C:\\Users\\Bastien\\.nuget\\packages\\",
       "outputPath": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+      "projectName": "CuisinHELHa",
+      "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+      "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
+>>>>>>> c0e1c31d13775ef16c4a721dd1ace61d53c682e8
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

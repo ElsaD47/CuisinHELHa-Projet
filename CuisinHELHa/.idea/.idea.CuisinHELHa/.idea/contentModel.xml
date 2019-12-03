@@ -29,7 +29,9 @@
           <e p="IngredientsDTO.cs" t="Include" />
           <e p="PicturesDTO.cs" t="Include" />
           <e p="RecipesDTO.cs" t="Include" />
+          <e p="RecipesPseudoDTO.cs" t="Include" />
           <e p="ReviewsDTO.cs" t="Include" />
+          <e p="ReviewsPseudoDTO.cs" t="Include" />
           <e p="StepsDTO.cs" t="Include" />
           <e p="UsedIngredientsDTO.cs" t="Include" />
           <e p="UsersDTO.cs" t="Include" />
@@ -56,6 +58,37 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="js" t="Include">
+            <e p="Angular-Recettes" t="Include">
+              <e p="assets" t="Include">
+                <e p="img" t="Include">
+                  <e p="cuisinHELHa_logo.png" t="Include" />
+                  <e p="logo-helha.png" t="Include" />
+                </e>
+              </e>
+              <e p="favicon.ico" t="Include" />
+              <e p="fontawesome-webfont.eot" t="Include" />
+              <e p="fontawesome-webfont.svg" t="Include" />
+              <e p="fontawesome-webfont.ttf" t="Include" />
+              <e p="fontawesome-webfont.woff" t="Include" />
+              <e p="fontawesome-webfont.woff2" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="main.js.map" t="Include" />
+              <e p="polyfills.js" t="Include" />
+              <e p="polyfills.js.map" t="Include" />
+              <e p="runtime.js" t="Include" />
+              <e p="runtime.js.map" t="Include" />
+              <e p="scripts.js" t="Include" />
+              <e p="scripts.js.map" t="Include" />
+              <e p="styles.js" t="Include" />
+              <e p="styles.js.map" t="Include" />
+              <e p="vendor.js" t="Include" />
+              <e p="vendor.js.map" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
       <e p="CuisinHELHa.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

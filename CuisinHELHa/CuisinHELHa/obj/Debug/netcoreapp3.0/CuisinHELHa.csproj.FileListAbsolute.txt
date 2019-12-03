@@ -84,6 +84,7 @@ C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELH
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
+<<<<<<< HEAD
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
@@ -137,3 +138,49 @@ C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.AssemblyInfo.cs
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.RazorTargetAssemblyInfo.cache
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
+=======
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.exe
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.deps.json
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.runtimeconfig.json
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.runtimeconfig.dev.json
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.pdb
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SpaServices.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.Win32.Registry.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.AccessControl.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.Principal.Windows.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csprojAssemblyReference.cache
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\staticwebassets\CuisinHELHa.StaticWebAssets.Manifest.cache
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\staticwebassets\CuisinHELHa.StaticWebAssets.xml
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.AssemblyInfoInputs.cache
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.AssemblyInfo.cs
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.RazorTargetAssemblyInfo.cache
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
+>>>>>>> c0e1c31d13775ef16c4a721dd1ace61d53c682e8

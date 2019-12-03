@@ -18,9 +18,20 @@ namespace CuisinHELHa.DAO
         public static readonly string FIELD_SPICESRATE = "spicesRate";
         public static readonly string FIELD_RECIPETYPE = "recipeType";
         
+        private static readonly string TABLE_USER_NAME = "users";
+        public static readonly string FIELD_USER_PSEUDO_USER = "pseudo";
+        
         //Queries
         private static readonly string REQ_QUERY
-            = $"SELECT * FROM {TABLE_NAME}";
+                    = $"SELECT * FROM {TABLE_NAME}";
+        private static readonly string REQ_QUERY_WITH_PSEUDO
+            = $"SELECT r.*, u.{FIELD_USER_PSEUDO_USER} FROM {TABLE_NAME} r " +
+              $"JOIN {TABLE_USER_NAME} u ON r.{FIELD_ID_USER} = u.{FIELD_ID_USER}";
+        
+        private static readonly string REQ_QUERY_BY_ID_WITH_PSEUDO
+            = $"SELECT r.*, u.{FIELD_USER_PSEUDO_USER} FROM {TABLE_NAME} r " +
+              $"JOIN {TABLE_USER_NAME} u ON r.{FIELD_ID_USER} = u.{FIELD_ID_USER} " +
+              $"WHERE {FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}";
 
         private static readonly string REQ_POST
             = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_USER}, {FIELD_NAMERECIPE}, {FIELD_POSTDATE}, {FIELD_SUMMARY}, {FIELD_PERSONS}, {FIELD_PREPTIME}, {FIELD_SPICESRATE}, {FIELD_RECIPETYPE}) " +
@@ -58,6 +69,46 @@ namespace CuisinHELHa.DAO
                 }
             }
 
+            return recipes;
+        }
+
+        public static List<RecipesPseudoDTO> QueryWithPseudo()
+        {
+            List<RecipesPseudoDTO> recipes = new List<RecipesPseudoDTO>();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_WITH_PSEUDO;
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    recipes.Add(new RecipesPseudoDTO(reader));
+                }
+            }
+            return recipes;
+        }
+        
+        
+        public static IEnumerable<RecipesPseudoDTO> QueryByIdWithPseudo(int id)
+        {
+            List<RecipesPseudoDTO> recipes = new List<RecipesPseudoDTO>();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_BY_ID_WITH_PSEUDO;
+
+                command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", id);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    recipes.Add(new RecipesPseudoDTO(reader));
+                }
+            }
             return recipes;
         }
 
@@ -118,5 +169,6 @@ namespace CuisinHELHa.DAO
 
             return hasBeenChanged;
         }
+
     }
 }
