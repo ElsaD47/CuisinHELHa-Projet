@@ -44,6 +44,7 @@ namespace CuisinHELHa.DTO
             PrepTime = Convert.ToInt32(reader[RecipesDAO.FIELD_PREPTIME].ToString());
             SpiceRate = Convert.ToInt32(reader[RecipesDAO.FIELD_SPICESRATE].ToString());
             RecipeType = reader[RecipesDAO.FIELD_RECIPETYPE].ToString();
+            
         }
     }
 }

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Niborobin\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Niborobin\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CuisinHELHa.245884323.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa" t="IncludeFlat">
+    <e p="C:\Users\Niborobin\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CuisinHELHa.-1423291081.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa" t="IncludeFlat">
       <e p="CuisinHELHa" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
@@ -31,7 +31,9 @@
           <e p="IngredientsDTO.cs" t="Include" />
           <e p="PicturesDTO.cs" t="Include" />
           <e p="RecipesDTO.cs" t="Include" />
+          <e p="RecipesPseudoDTO.cs" t="Include" />
           <e p="ReviewsDTO.cs" t="Include" />
+          <e p="ReviewsPseudoDTO.cs" t="Include" />
           <e p="StepsDTO.cs" t="Include" />
           <e p="UsedIngredientsDTO.cs" t="Include" />
           <e p="UsersDTO.cs" t="Include" />
@@ -53,6 +55,47 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="js" t="Include">
+            <e p="Angular-Recettes" t="Include">
+              <e p="assets" t="Include">
+                <e p="img" t="Include">
+                  <e p="cuisinHELHa_logo.png" t="Include" />
+                  <e p="logo-helha.png" t="Include" />
+                </e>
+              </e>
+              <e p="favicon.ico" t="Include" />
+              <e p="fontawesome-webfont.eot" t="Include" />
+              <e p="fontawesome-webfont.svg" t="Include" />
+              <e p="fontawesome-webfont.ttf" t="Include" />
+              <e p="fontawesome-webfont.woff" t="Include" />
+              <e p="fontawesome-webfont.woff2" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main-es2015.js" t="Include" />
+              <e p="main-es2015.js.map" t="Include" />
+              <e p="main-es5.js" t="Include" />
+              <e p="main-es5.js.map" t="Include" />
+              <e p="polyfills-es2015.js" t="Include" />
+              <e p="polyfills-es2015.js.map" t="Include" />
+              <e p="polyfills-es5.js" t="Include" />
+              <e p="polyfills-es5.js.map" t="Include" />
+              <e p="runtime-es2015.js" t="Include" />
+              <e p="runtime-es2015.js.map" t="Include" />
+              <e p="runtime-es5.js" t="Include" />
+              <e p="runtime-es5.js.map" t="Include" />
+              <e p="scripts.js" t="Include" />
+              <e p="scripts.js.map" t="Include" />
+              <e p="styles-es2015.js" t="Include" />
+              <e p="styles-es2015.js.map" t="Include" />
+              <e p="styles-es5.js" t="Include" />
+              <e p="styles-es5.js.map" t="Include" />
+              <e p="vendor-es2015.js" t="Include" />
+              <e p="vendor-es2015.js.map" t="Include" />
+              <e p="vendor-es5.js" t="Include" />
+              <e p="vendor-es5.js.map" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
       <e p="CuisinHELHa.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

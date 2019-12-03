@@ -6224,11 +6224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+      "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
       "projectName": "CuisinHELHa",
-      "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+      "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
       "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\ASP.net (back_end)\\CuisinHELHa\\CuisinHELHa\\obj\\",
+      "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Niborobin\\AppData\\Roaming\\NuGet\\NuGet.Config"

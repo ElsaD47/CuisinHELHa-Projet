@@ -16,6 +16,18 @@ namespace CuisinHELHa.Controllers
         {
             return RecipesDAO.Query();
         }
+        
+        [HttpGet("pseudo")]
+        public IEnumerable<RecipesPseudoDTO> GetWithPseudo()
+        {
+            return RecipesDAO.QueryWithPseudo();
+        }
+        
+        [HttpGet("id={id}")]
+        public IEnumerable<RecipesPseudoDTO> GetById(int id)
+        {
+            return RecipesDAO.QueryByIdWithPseudo(id);
+        }
 
         [HttpPost]
         public RecipesDTO Post([FromBody] RecipesDTO recipesDto)
