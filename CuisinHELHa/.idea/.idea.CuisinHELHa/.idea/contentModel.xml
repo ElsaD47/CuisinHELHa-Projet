@@ -24,7 +24,6 @@
           <e p="RecipesDAO.cs" t="Include" />
           <e p="ReviewsDAO.cs" t="Include" />
           <e p="StepsDAO.cs" t="Include" />
-          <e p="UsedIngredientsDAO.cs" t="Include" />
           <e p="UsersDAO.cs" t="Include" />
         </e>
         <e p="DTO" t="Include">
@@ -71,28 +70,18 @@
               <e p="fontawesome-webfont.woff" t="Include" />
               <e p="fontawesome-webfont.woff2" t="Include" />
               <e p="index.html" t="Include" />
-              <e p="main-es2015.js" t="Include" />
-              <e p="main-es2015.js.map" t="Include" />
-              <e p="main-es5.js" t="Include" />
-              <e p="main-es5.js.map" t="Include" />
-              <e p="polyfills-es2015.js" t="Include" />
-              <e p="polyfills-es2015.js.map" t="Include" />
-              <e p="polyfills-es5.js" t="Include" />
-              <e p="polyfills-es5.js.map" t="Include" />
-              <e p="runtime-es2015.js" t="Include" />
-              <e p="runtime-es2015.js.map" t="Include" />
-              <e p="runtime-es5.js" t="Include" />
-              <e p="runtime-es5.js.map" t="Include" />
+              <e p="main.js" t="Include" />
+              <e p="main.js.map" t="Include" />
+              <e p="polyfills.js" t="Include" />
+              <e p="polyfills.js.map" t="Include" />
+              <e p="runtime.js" t="Include" />
+              <e p="runtime.js.map" t="Include" />
               <e p="scripts.js" t="Include" />
               <e p="scripts.js.map" t="Include" />
-              <e p="styles-es2015.js" t="Include" />
-              <e p="styles-es2015.js.map" t="Include" />
-              <e p="styles-es5.js" t="Include" />
-              <e p="styles-es5.js.map" t="Include" />
-              <e p="vendor-es2015.js" t="Include" />
-              <e p="vendor-es2015.js.map" t="Include" />
-              <e p="vendor-es5.js" t="Include" />
-              <e p="vendor-es5.js.map" t="Include" />
+              <e p="styles.js" t="Include" />
+              <e p="styles.js.map" t="Include" />
+              <e p="vendor.js" t="Include" />
+              <e p="vendor.js.map" t="Include" />
             </e>
           </e>
         </e>

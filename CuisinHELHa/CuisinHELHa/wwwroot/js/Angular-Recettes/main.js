@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-account-modal></app-account-modal>\r\n<app-header></app-header>\r\n<router-outlet></router-outlet>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-account-modal></app-account-modal>\r\n<app-header></app-header>\r\n\r\n<router-outlet></router-outlet>\r\n");
 
 /***/ }),
 
@@ -88,6 +88,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/pages/recipe-create/recipe-create.component.html":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/pages/recipe-create/recipe-create.component.html ***!
+  \*******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container-fluid col-lg-12 imgBack\">\r\n\r\n\r\n<div class=\"container-fluid col-lg-3\">\r\n\r\n</div>\r\n<div class=\"container-fluid border col-lg-7 col-sm-12 text-center \" style=\"background-color: white\">\r\n  <h3 class=\"text-center font-weight-bold p-3\">Create recipe</h3>\r\n  <form #formElement=\"ngForm\" (ngSubmit)=addRecipe()>\r\n    <div class=\"form-row\">\r\n      <div class=\"col-md-12 mb-3\">\r\n        <label for=\"recipeName\">Recipe Name</label>\r\n        <input type=\"text\" class=\"form-control\" id=\"recipeName\" minlength=\"5\" required>\r\n      </div>\r\n    </div>\r\n    <div class=\"form-row\">\r\n      <div class=\"col-md-12 mb-3\">\r\n        <label for=\"recipeSummary\">Summary of your recipe</label>\r\n        <input type=\"text\" class=\"form-control\" id=\"recipeSummary\" required>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"form-row\">\r\n      <div class=\"col-md-3 mb-3\">\r\n        <label for=\"recipeType\">Recipe Type</label>\r\n        <div class=\"input-group\">\r\n          <select class=\"custom-select\" id=\"recipeType\" required>\r\n            <option *ngFor=\"let filter of filters\">{{filter.value}}</option>\r\n          </select>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-3 mb-3\">\r\n        <label for=\"prepTimeRecipe\">Preparation time</label>\r\n        <input type=\"number\" class=\"form-control\" id=\"prepTimeRecipe\" required>\r\n      </div>\r\n      <div class=\"col-md-3 mb-3\">\r\n        <label for=\"persons\">Persons</label>\r\n        <input type=\"number\" class=\"form-control\" id=\"persons\" required>\r\n      </div>\r\n      <div class=\"col-md-3 mb-3\">\r\n        <label for=\"\">Spice Rate</label>\r\n        <select class=\"custom-select\" id=\"\" required>\r\n          <option selected disabled value=\"\">Choose...</option>\r\n          <option>1</option>\r\n          <option>2</option>\r\n          <option>3</option>\r\n          <option>4</option>\r\n          <option>5</option>\r\n        </select>\r\n      </div>\r\n    </div>\r\n\r\n    <!-- Ingredients -->\r\n    <div class=\"form-row\">\r\n      <div class=\"col-md-5 mb-3\">\r\n        <label for=\"ingredients\">ingredients</label>\r\n        <select class=\"custom-select\" id=\"ingredients\">\r\n          <option *ngFor=\"let ingredient of ingredients; index as i\">\r\n            {{ingredient.nameIngredient}}\r\n          </option>\r\n        </select>\r\n\r\n      </div>\r\n      <div class=\"col-md-3 mb-3\">\r\n        <label for=\"ingredientQuantity\">quantity</label>\r\n        <input type=\"number\" class=\"form-control\" id=\"ingredientQuantity\" required>\r\n      </div>\r\n      <div class=\"col-md-4 mb-3\">\r\n        <label for=\"mesureIngredient\">Mesure</label>\r\n        <select class=\"custom-select\" id=\"mesureIngredient\" required>\r\n          <option selected disabled value=\"\">Choose...</option>\r\n          <option>Gr</option>\r\n          <option>Ml</option>\r\n          <option>piece(s)</option>\r\n        </select>\r\n      </div>\r\n\r\n      <button class=\"btn btn-sm btn-dark mr-2\" style=\"height:30px\">Add ingredient</button>\r\n\r\n    </div>\r\n    <div class=\"form-row\">\r\n      <div class=\"col-md-12 mb-3\">\r\n        <label for=\"steps\">Step(s)</label>\r\n        <textarea class=\"form-control\" id=\"steps\"></textarea>\r\n      </div>\r\n      <div class=\"\">\r\n        <button class=\"btn btn-sm btn-dark\" style=\"height:30px\" >Add step</button>\r\n      </div>\r\n    </div>\r\n    <div class=\"form-row\">\r\n      <button class=\"btn btn-sm btn-dark\" style=\"height:30px;width: 80px\"> choisir un fichier</button>\r\n    </div>\r\n    <button [disabled]=\"!formElement.valid\" class=\"btn btn-md btn-warning mr-2 col-12 mt-2\" type=\"submit\">\r\n      <h6 class=\"d-inline font-weight-bold\">Submit recipe</h6>\r\n    </button>\r\n  </form>\r\n</div>\r\n<div class=\"container-fluid col-lg-3\"></div>\r\n</div>\r\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/pages/recipe-details/recipe-details.component.html":
 /*!*********************************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/pages/recipe-details/recipe-details.component.html ***!
@@ -97,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1>{{recipe.nameRecipe}}</h1>\n<h3 *ngFor=\"let s of spices\">*</h3>\n<h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\n{{recipe.summary}}<br>\n<i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\ningrédients :\n<ul>\n    <li *ngFor=\"let ingredient of ingredients\">\n        {{ingredient.nameIngredient}}\n    </li>\n</ul>\npréparation :\n<ul>\n    <li *ngFor=\"let step of steps\">\n        {{step.stepNb}} : {{step.step}}\n    </li>\n</ul>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1>{{recipe.nameRecipe}}</h1>\n<h3 *ngFor=\"let s of spices\">*</h3>\n<h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\n{{recipe.summary}}<br>\n<i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\ningrédients :\n<ul>\n    <li *ngFor=\"let ingredient of ingredients\">\n        {{ingredient.quantity}}{{ingredient.unit}} {{ingredient.nameIngredient}}\n    </li>\n</ul>\npréparation :\n<ul>\n    <li *ngFor=\"let step of steps\">\n        {{step.stepNb}} : {{step.step}}\n    </li>\n</ul>\n\n<h5>Formulaire de commentaires</h5>\n\n<div *ngFor=\"let review of reviews\">\n    <h6>{{review.pseudo}}</h6> ({{review.rate}}/5)\n    <p>{{review.reviewMessage}}</p>\n</div>\n");
 
 /***/ }),
 
@@ -149,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of FILTERS\">\n    <label [for]=\"filter.id\">{{filter.id}}</label>\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\n</div>\n\n<div>\n    <div *ngFor=\"let recipe of filteredRecipes\">\n        <app-recipe-result [recipe]=\"recipe\" (click)=\"loadRecipe(recipe)\"></app-recipe-result>\n    </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n    <div *ngFor=\"let recipe of filteredRecipes\">\r\n        <app-recipe-result [recipe]=\"recipe\" (click)=\"loadRecipe(recipe)\"></app-recipe-result>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -497,6 +510,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/pages/recipe-search/recipe-search.component */ "./src/app/components/pages/recipe-search/recipe-search.component.ts");
 /* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
 /* harmony import */ var _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/pages/user-details/user-details.component */ "./src/app/components/pages/user-details/user-details.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+
+
 
 
 
@@ -531,13 +548,15 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_13__["AccountModalComponent"],
             _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
             _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_15__["RecipeSearchComponent"],
-            _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_17__["UserDetailsComponent"]
+            _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_17__["UserDetailsComponent"],
+            _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_19__["RecipeCreateComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             angular_font_awesome__WEBPACK_IMPORTED_MODULE_4__["AngularFontAwesomeModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
-            _app_routing__WEBPACK_IMPORTED_MODULE_16__["appRoutingModule"]
+            _app_routing__WEBPACK_IMPORTED_MODULE_16__["appRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HttpClientModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -564,6 +583,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
 /* harmony import */ var _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
 /* harmony import */ var _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
+/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+
 
 
 
@@ -573,8 +594,10 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: '', component: _components_pages_home__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
     { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_3__["RecipeSearchComponent"] },
-    { path: 'recipe-detail', component: _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__["RecipeDetailsComponent"] },
-    { path: 'user-detail', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__["UserDetailsComponent"] },
+    { path: 'recipe-details/:id', component: _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__["RecipeDetailsComponent"] },
+    { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__["UserDetailsComponent"] },
+    { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__["UserDetailsComponent"] },
+    { path: 'recipe-create', component: _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__["RecipeCreateComponent"] },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
@@ -819,6 +842,52 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/app/components/pages/recipe-create/recipe-create.component.css":
+/*!****************************************************************************!*\
+  !*** ./src/app/components/pages/recipe-create/recipe-create.component.css ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".imgBack{\r\n  background-image: url('createRecipeFull.jpg');\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9wYWdlcy9yZWNpcGUtY3JlYXRlL3JlY2lwZS1jcmVhdGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDZDQUFvRTtBQUN0RSIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcGFnZXMvcmVjaXBlLWNyZWF0ZS9yZWNpcGUtY3JlYXRlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaW1nQmFja3tcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIuLi8uLi8uLi8uLi9hc3NldHMvaW1nL2NyZWF0ZVJlY2lwZUZ1bGwuanBnXCIpO1xyXG59XHJcblxyXG4iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/pages/recipe-create/recipe-create.component.ts":
+/*!***************************************************************************!*\
+  !*** ./src/app/components/pages/recipe-create/recipe-create.component.ts ***!
+  \***************************************************************************/
+/*! exports provided: RecipeCreateComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeCreateComponent", function() { return RecipeCreateComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let RecipeCreateComponent = class RecipeCreateComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+    addRecipe() {
+    }
+};
+RecipeCreateComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-recipe-create',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipe-create.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/pages/recipe-create/recipe-create.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipe-create.component.css */ "./src/app/components/pages/recipe-create/recipe-create.component.css")).default]
+    })
+], RecipeCreateComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/pages/recipe-details/index.ts":
 /*!**********************************************************!*\
   !*** ./src/app/components/pages/recipe-details/index.ts ***!
@@ -863,34 +932,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeDetailsComponent", function() { return RecipeDetailsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_ingredient_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/ingredient.service */ "./src/app/services/ingredient.service.ts");
+/* harmony import */ var _services_recipe_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../services/recipe.service */ "./src/app/services/recipe.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _services_step_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../services/step.service */ "./src/app/services/step.service.ts");
+/* harmony import */ var _services_review_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../services/review.service */ "./src/app/services/review.service.ts");
+
+
+
+
+
 
 
 let RecipeDetailsComponent = class RecipeDetailsComponent {
-    constructor() {
-        this.MOCK_STEPS = [{
-                idRecipe: 1,
-                stepNb: 1,
-                step: "Couper 300 cubes de beurre"
-            }, {
-                idRecipe: 1,
-                stepNb: 2,
-                step: "faire fondre le beurre"
-            }, {
-                idRecipe: 1,
-                stepNb: 3,
-                step: "étaler le beurre sur la tartine"
-            }, {
-                idRecipe: 2,
-                stepNb: 1,
-                step: "étape ne devant pas apparaitre"
-            }];
-        this.MOCK_INGREDIENT = [{
-                nameIngredient: "Beurre",
-            }];
+    constructor(ingredientService, stepService, recipeService, reviewService, route, router) {
+        this.ingredientService = ingredientService;
+        this.stepService = stepService;
+        this.recipeService = recipeService;
+        this.reviewService = reviewService;
+        this.route = route;
+        this.router = router;
+        this.subscriptions = [];
     }
     ngOnInit() {
-        this.ingredients = this.MOCK_INGREDIENT;
-        this.steps = this.MOCK_STEPS;
+        console.log(this.route.paramMap);
+        const sub = this.route.paramMap.subscribe(params => {
+            this.idParam = params.get("id");
+            console.log(this.idParam);
+            this.idRecipe = parseInt(this.idParam);
+        });
+        console.log(this.idRecipe);
+        this.subscriptions.push(sub);
+        this.loadRecipe();
+        this.loadIngredients();
+        this.loadSteps();
+        this.loadReviews();
     }
     get recipe() {
         return this._recipe;
@@ -917,13 +993,48 @@ let RecipeDetailsComponent = class RecipeDetailsComponent {
     set ingredients(value) {
         this._ingredients = value;
     }
+    get reviews() {
+        return this._reviews;
+    }
+    set reviews(value) {
+        this._reviews = value;
+    }
     updateSpice(nb) {
         this._spices = Array(nb).fill(0);
     }
+    loadIngredients() {
+        const sub = this.ingredientService
+            .queryRecipeId(this.idRecipe)
+            .subscribe(ingredients => this.ingredients = ingredients);
+        this.subscriptions.push(sub);
+    }
+    loadRecipe() {
+        const sub = this.recipeService
+            .queryId(this.idRecipe)
+            .subscribe(recipes => this.recipe = recipes[0]);
+        this.subscriptions.push(sub);
+    }
+    loadSteps() {
+        const sub = this.stepService
+            .queryByRecipe(this.idRecipe)
+            .subscribe(steps => this.steps = steps);
+        this.subscriptions.push(sub);
+    }
+    loadReviews() {
+        const sub = this.reviewService
+            .queryByRecipe(this.idRecipe)
+            .subscribe(reviews => this.reviews = reviews);
+        this.subscriptions.push(sub);
+    }
 };
-tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
-], RecipeDetailsComponent.prototype, "recipe", null);
+RecipeDetailsComponent.ctorParameters = () => [
+    { type: _services_ingredient_service__WEBPACK_IMPORTED_MODULE_2__["IngredientService"] },
+    { type: _services_step_service__WEBPACK_IMPORTED_MODULE_5__["StepService"] },
+    { type: _services_recipe_service__WEBPACK_IMPORTED_MODULE_3__["RecipeService"] },
+    { type: _services_review_service__WEBPACK_IMPORTED_MODULE_6__["ReviewService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }
+];
 RecipeDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-recipe-details',
@@ -1388,6 +1499,218 @@ GlobalsService = GlobalsService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decora
     ,
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
 ], GlobalsService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/ingredient.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/ingredient.service.ts ***!
+  \************************************************/
+/*! exports provided: IngredientService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IngredientService", function() { return IngredientService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+var IngredientService_1;
+
+
+
+let IngredientService = IngredientService_1 = class IngredientService {
+    constructor(http) {
+        this.http = http;
+    }
+    query() {
+        return this.http.get(IngredientService_1.URL);
+    }
+    queryRecipeId(id) {
+        return this.http.get(IngredientService_1.URL + "recipe=" + id);
+    }
+    post(ingredient) {
+        return this.http.post(IngredientService_1.URL, ingredient);
+    }
+    put(ingredient) {
+        return this.http.put(IngredientService_1.URL, ingredient);
+    }
+    delete(id) {
+        return this.http.delete(`${IngredientService_1.URL}/${id}`);
+    }
+};
+IngredientService.URL = "/api/ingredients/";
+IngredientService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+IngredientService = IngredientService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], IngredientService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/recipe.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/recipe.service.ts ***!
+  \********************************************/
+/*! exports provided: RecipeService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeService", function() { return RecipeService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+var RecipeService_1;
+
+
+
+let RecipeService = RecipeService_1 = class RecipeService {
+    constructor(http) {
+        this.http = http;
+    }
+    query() {
+        return this.http.get(RecipeService_1.URL);
+    }
+    queryPseudo() {
+        return this.http.get(RecipeService_1.URL + "pseudo");
+    }
+    queryText(text) {
+        text.replace(" ", "_");
+        return this.http.get(RecipeService_1.URL + "text=" + text);
+    }
+    queryId(id) {
+        return this.http.get(RecipeService_1.URL + "id=" + id);
+    }
+    post(ingredient) {
+        return this.http.post(RecipeService_1.URL, ingredient);
+    }
+    put(ingredient) {
+        return this.http.put(RecipeService_1.URL, ingredient);
+    }
+    delete(id) {
+        return this.http.delete(`${RecipeService_1.URL}/${id}`);
+    }
+};
+RecipeService.search = "";
+RecipeService.URL = "/api/recipes/";
+RecipeService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+RecipeService = RecipeService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], RecipeService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/review.service.ts":
+/*!********************************************!*\
+  !*** ./src/app/services/review.service.ts ***!
+  \********************************************/
+/*! exports provided: ReviewService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReviewService", function() { return ReviewService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+var ReviewService_1;
+
+
+
+let ReviewService = ReviewService_1 = class ReviewService {
+    constructor(http) {
+        this.http = http;
+    }
+    query() {
+        return this.http.get(ReviewService_1.URL);
+    }
+    queryByRecipe(id) {
+        return this.http.get(ReviewService_1.URL + "recipe=" + id);
+    }
+    post(ingredient) {
+        return this.http.post(ReviewService_1.URL, ingredient);
+    }
+    put(ingredient) {
+        return this.http.put(ReviewService_1.URL, ingredient);
+    }
+    delete(id) {
+        return this.http.delete(`${ReviewService_1.URL}/${id}`);
+    }
+};
+ReviewService.URL = "/api/reviews/";
+ReviewService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ReviewService = ReviewService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ReviewService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/step.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/services/step.service.ts ***!
+  \******************************************/
+/*! exports provided: StepService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StepService", function() { return StepService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+var StepService_1;
+
+
+
+let StepService = StepService_1 = class StepService {
+    constructor(http) {
+        this.http = http;
+    }
+    query() {
+        return this.http.get(StepService_1.URL);
+    }
+    queryByRecipe(id) {
+        return this.http.get(StepService_1.URL + id);
+    }
+    post(ingredient) {
+        return this.http.post(StepService_1.URL, ingredient);
+    }
+    put(ingredient) {
+        return this.http.put(StepService_1.URL, ingredient);
+    }
+    delete(id) {
+        return this.http.delete(`${StepService_1.URL}/${id}`);
+    }
+};
+StepService.URL = "/api/steps/";
+StepService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+StepService = StepService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], StepService);
 
 
 

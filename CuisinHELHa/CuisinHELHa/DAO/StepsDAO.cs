@@ -16,7 +16,11 @@ namespace CuisinHELHa.DAO
         //Queries
         private static readonly string REQ_QUERY
             = $"SELECT * FROM {TABLE_NAME}";
-
+        
+        private static readonly string REQ_QUERY_BY_RECIPE
+            = $"SELECT * FROM {TABLE_NAME} " +
+              $"WHERE {FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}";
+        
         private static readonly string REQ_POST
             = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_RECIPE}, {FIELD_STEP}, {FIELD_STEPNUMBER}) " +
               $"OUTPUT Inserted.{FIELD_ID_STEP} " +
@@ -39,6 +43,26 @@ namespace CuisinHELHa.DAO
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
                 command.CommandText = REQ_QUERY;
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    recipes.Add(new StepsDTO(reader));
+                }
+            }
+            return recipes;
+        }
+        
+        public static List<StepsDTO> QueryByRecipe(int id)
+        {
+            List<StepsDTO> recipes = new List<StepsDTO>();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY;
+                command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", id);
 
                 SqlDataReader reader = command.ExecuteReader();
 
