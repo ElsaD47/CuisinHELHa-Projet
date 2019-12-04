@@ -22,7 +22,6 @@
           <e p="RecipesDAO.cs" t="Include" />
           <e p="ReviewsDAO.cs" t="Include" />
           <e p="StepsDAO.cs" t="Include" />
-          <e p="UsedIngredientsDAO.cs" t="Include" />
           <e p="UsersDAO.cs" t="Include" />
         </e>
         <e p="DTO" t="Include">
@@ -63,10 +62,13 @@
             <e p="Angular-Recettes" t="Include">
               <e p="assets" t="Include">
                 <e p="img" t="Include">
+                  <e p="createRecipe.jpg" t="Include" />
+                  <e p="createRecipeFull.jpg" t="Include" />
                   <e p="cuisinHELHa_logo.png" t="Include" />
                   <e p="logo-helha.png" t="Include" />
                 </e>
               </e>
+              <e p="createRecipeFull.jpg" t="Include" />
               <e p="favicon.ico" t="Include" />
               <e p="fontawesome-webfont.eot" t="Include" />
               <e p="fontawesome-webfont.svg" t="Include" />

@@ -39,13 +39,13 @@ namespace CuisinHELHa.DTO
         {
             IdRecipe = Convert.ToInt32(reader[RecipesDAO.FIELD_ID_RECIPE].ToString());
             IdUser = Convert.ToInt32(reader[RecipesDAO.FIELD_ID_USER].ToString()) ;
-            NameRecipe = reader[RecipesDAO.FIELD_NAMERECIPE].ToString();
+            NameRecipe = reader[RecipesDAO.FIELD_NAME_RECIPE].ToString();
             PostDate = reader[RecipesDAO.FIELD_POSTDATE].ToString();
             Summary = reader[RecipesDAO.FIELD_SUMMARY].ToString();
             Persons = Convert.ToInt32(reader[RecipesDAO.FIELD_PERSONS].ToString());
             PrepTime = Convert.ToInt32(reader[RecipesDAO.FIELD_PREPTIME].ToString());
-            SpiceRate = Convert.ToInt32(reader[RecipesDAO.FIELD_SPICESRATE].ToString());
-            RecipeType = reader[RecipesDAO.FIELD_RECIPETYPE].ToString();
+            SpiceRate = Convert.ToInt32(reader[RecipesDAO.FIELD_SPICES_RATE].ToString());
+            RecipeType = reader[RecipesDAO.FIELD_RECIPE_TYPE].ToString();
             Pseudo = reader[RecipesDAO.FIELD_USER_PSEUDO_USER].ToString();
         }
     }

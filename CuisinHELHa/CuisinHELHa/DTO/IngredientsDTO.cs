@@ -22,8 +22,8 @@ namespace CuisinHELHa.DTO
 
         public IngredientsDTO(SqlDataReader reader)
         {
-            IdIngredient = Convert.ToInt32(reader[IngredientsDAO.FIELD_ID].ToString());
-            NameIngredient = reader[IngredientsDAO.FIELD_NAMEINGREDIENT].ToString();
+            IdIngredient = Convert.ToInt32(reader[IngredientsDAO.FIELD_ID_INGREDIENT].ToString());
+            NameIngredient = reader[IngredientsDAO.FIELD_NAME_INGREDIENT].ToString();
         }
     }
 }

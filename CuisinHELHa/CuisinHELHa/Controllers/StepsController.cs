@@ -15,6 +15,13 @@ namespace CuisinHELHa.Controllers
             return StepsDAO.Query();
         }
 
+        [HttpGet("{id}")]
+        public IEnumerable<StepsDTO>GetByRecipe(int id)
+        {
+            return StepsDAO.QueryByRecipe(id);
+        }
+
+        
         [HttpPost]
         public StepsDTO Post([FromBody] StepsDTO stepsDto)
         {
