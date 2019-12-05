@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Modal -->\r\n<div class=\"modal fade \" id=\"accountModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"accountModalLabel\"\r\n     aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n      <div class=\"container-fluid align-y-center\">\r\n        <div class=\"row \">\r\n          <div class=\"col \">\r\n            <div class=\"modal-content border-0\">\r\n              <div class=\"modal-header main-color shadow-sm\">\r\n                <h5 class=\"modal-title font-weight-bold\" id=\"accountModalLabel\">Account</h5>\r\n                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n                  <fa name=\"close\" size=\"1x\"></fa>\r\n                </button>\r\n              </div>\r\n              <div class=\"modal-body\">\r\n                <app-login-form></app-login-form>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Modal -->\r\n<div aria-hidden=\"true\" aria-labelledby=\"accountModalLabel\" class=\"modal fade pl-0\" id=\"accountModal\" role=\"dialog\"\r\n     tabindex=\"-1\">\r\n  <div class=\"modal-dialog d-flex h-100 align-items-center\" role=\"document\">\r\n    <div class=\"container-fluid\">\r\n      <div class=\"row\">\r\n        <div class=\"col\">\r\n          <div class=\"modal-content border-0\">\r\n            <div class=\"modal-header main-color shadow-sm\">\r\n              <h5 class=\"modal-title font-weight-bold\" id=\"accountModalLabel\">Account</h5>\r\n              <button aria-label=\"Close\" class=\"close\" data-dismiss=\"modal\" type=\"button\">\r\n                <fa name=\"close\" size=\"1x\"></fa>\r\n              </button>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n              <app-login-form></app-login-form>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-color shadow pt-2 pb-1\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row mb-2\">\r\n  <!--      Logo and login button for mobile-->\r\n      <div class=\"col-7 offset-1 d-flex justify-content-start\">\r\n        <a href=\"\" class=\"\">\r\n          <img [src]=\"LOGO_PATH\" alt=\"logo\"/>\r\n        </a>\r\n      </div>\r\n      <div class=\"col-4 d-flex justify-content-end pr-4\">\r\n        <div class=\"d-flex ml-3\">\r\n          <fa name=\"user-circle\" size=\"2x\" class=\"my-auto\" (click)=\"onLoginIconClick()\"></fa>\r\n        </div>\r\n      </div>\r\n\r\n<!--      Login form-->\r\n<!--      <div class=\"col-md-4 offset-md-6 pb-1\">-->\r\n<!--        <app-login-form *ngIf=\"!mobile\"></app-login-form>-->\r\n<!--        <app-login-form *ngIf=\"mobile && clickedLoginIcon\"></app-login-form>-->\r\n<!--      </div>-->\r\n\r\n<!--      Recipe search bar-->\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-12 col-sm-7 col-md-5 col-lg-4 col-xl-3\">\r\n          <app-recipe-search-bar></app-recipe-search-bar>\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-color shadow pt-2 pb-1\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row mb-2\">\r\n      <!--      Logo and login button for mobile-->\r\n      <div class=\"col-7 offset-1 d-flex justify-content-start\">\r\n        <a class=\"\" href=\"\">\r\n          <img [src]=\"LOGO_PATH\" alt=\"logo\"/>\r\n        </a>\r\n      </div>\r\n      <div class=\"col-4 d-flex justify-content-end pr-4\">\r\n        <div class=\"d-flex ml-3\">\r\n          <fa (click)=\"onLoginIconClick()\" class=\"my-auto\" name=\"user-circle\" size=\"2x\"></fa>\r\n        </div>\r\n      </div>\r\n\r\n      <!--      Login form-->\r\n      <!--      <div class=\"col-md-4 offset-md-6 pb-1\">-->\r\n      <!--        <app-login-form *ngIf=\"!mobile\"></app-login-form>-->\r\n      <!--        <app-login-form *ngIf=\"mobile && clickedLoginIcon\"></app-login-form>-->\r\n      <!--      </div>-->\r\n\r\n      <!--      Recipe search bar-->\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-12 col-sm-7 col-md-5 col-lg-4 col-xl-3\">\r\n        <app-recipe-search-bar></app-recipe-search-bar>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form class=\"pb-2 mb-1 mb-sm-0 text-dark font-weight-bold\" #formElement=\"ngForm\" (ngSubmit)=\"testLogin()\">\r\n  <div class=\"row\">\r\n<!--    LEFT SIDE OF THE LOGIN-->\r\n    <div [class]=\"leftColClasses\">\r\n      <div class=\"row\">\r\n        <span class=\"col col-sm-3\">\r\n          <label for=\"login\">\r\n              Login:\r\n          </label>\r\n        </span>\r\n      </div>\r\n\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input type=\"text\" id=\"login\" name=\"login\" class=\"form-control form-control-sm\" [(ngModel)]=\"login\" minlength=\"3\" required #loginElement=\"ngModel\">\r\n        </span>\r\n      </div>\r\n\r\n      <div class=\"row mt-3\">\r\n        <span class=\"col\">\r\n          <label for=\"password\">\r\n              Password:\r\n          </label>\r\n        </span>\r\n      </div>\r\n\r\n      <div class=\"row mb-3\">\r\n        <span class=\"col\">\r\n          <input type=\"password\" id=\"password\" name=\"password\" class=\"form-control form-control-sm\" [(ngModel)]=\"password\" minlength=\"3\" required #passwordElement=\"ngModel\">\r\n        </span>\r\n      </div>\r\n\r\n      <div class=\"row\">\r\n        <div class=\"col d-flex justify-content-between\">\r\n          <div>\r\n            <button type=\"submit\" class=\"btn btn-sm btn-dark ml-1\">\r\n              <h6 class=\"d-inline font-weight-bold\">Sign-up</h6>\r\n            </button>\r\n          </div>\r\n          <div>\r\n            <button type=\"submit\" [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-dark mr-2\">\r\n              <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<form (ngSubmit)=\"authenticate()\" [formGroup]=\"form\" class=\"pb-2 mb-1 mb-sm-0 text-dark font-weight-bold\">\r\n  <div class=\"row\">\r\n    <!--    LEFT SIDE OF THE LOGIN-->\r\n    <div class=\"col-10 offset-1\">\r\n      <div class=\"row\">\r\n        <span class=\"col col-sm-3\">\r\n          <label for=\"login\">\r\n              Login:\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input class=\"form-control form-control-sm\" formControlName=\"login\" id=\"login\" name=\"login\" type=\"text\">\r\n        </span>\r\n      </div>\r\n      <div class=\"row mt-3\">\r\n        <span class=\"col\">\r\n          <label for=\"password\">\r\n              Password:\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input class=\"form-control form-control-sm\" formControlName=\"password\" id=\"password\" name=\"password\"\r\n                 type=\"password\">\r\n        </span>\r\n      </div>\r\n\r\n      <!--      EMAIL AND PASSWORD CONFIRMATION-->\r\n      <div *ngIf=\"isSigningUp\">\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"passwordConfirm\">\r\n                Confirm password:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"passwordConfirm\" id=\"passwordConfirm\" name=\"passwordConfirm\"\r\n                   type=\"password\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"firstName\">\r\n                First name:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"firstName\" id=\"firstName\" name=\"firstName\"\r\n                   type=\"firstName\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"lastName\">\r\n                Last name:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"lastName\" id=\"lastName\" name=\"lastName\"\r\n                   type=\"lastName\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"email\">\r\n                Email:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"email\" id=\"email\" name=\"email\" type=\"email\">\r\n          </span>\r\n        </div>\r\n      </div>\r\n\r\n      <!--      WHEN LOGGING-->\r\n      <div class=\"mt-4\">\r\n        <div *ngIf=\"!isSigningUp\" class=\"row\">\r\n          <div class=\"col d-flex justify-content-between\">\r\n            <div>\r\n              <button (click)=\"useSignUpForm()\" class=\"btn btn-sm btn-dark ml-1\">\r\n                <h6 class=\"d-inline font-weight-bold\">Sign-up</h6>\r\n              </button>\r\n            </div>\r\n            <div>\r\n              <button [disabled]=\"!isFormValid()\" class=\"btn btn-sm btn-dark mr-2\">\r\n                <!--              <button class=\"btn btn-sm btn-dark mr-2\">-->\r\n                <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"isSigningUp\" class=\"row\">\r\n          <div class=\"col d-flex justify-content-between\">\r\n            <div>\r\n              <button (click)=\"useLoginForm()\" class=\"btn btn-sm btn-dark ml-1\">\r\n                <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n              </button>\r\n            </div>\r\n            <div>\r\n              <button [disabled]=\"!isFormValid()\" class=\"btn btn-sm btn-dark mr-2\">\r\n                <!--              <button class=\"btn btn-sm btn-dark mr-2\">-->\r\n                <h6 class=\"d-inline font-weight-bold\">Confirm</h6>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div>\n    <h2>{{recipe.nameRecipe}}</h2><h3 *ngFor=\"let s of spices\">*</h3>\n    <h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\n    {{recipe.summary}}<br>\n    <i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n  <h2>{{recipe.nameRecipe}}</h2>\r\n  <h3 *ngFor=\"let s of spices\">*</h3>\r\n  <h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\r\n  {{recipe.summary}}<br>\r\n  <i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" [routerLink]=\"'recipe-search/'+userSearch\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n     <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n      <fa name=\"search\"></fa>\r\n     </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input type=\"text\" id=\"userSearch\" name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" class=\"form-control form-control-sm\"\r\n             [(ngModel)]=\"userSearch\" minlength=\"3\" required #loginElement=\"ngModel\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" [routerLink]=\"'recipe-search/'+userSearch\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n      <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n        <fa name=\"search\"></fa>\r\n      </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input #loginElement=\"ngModel\" [(ngModel)]=\"userSearch\" class=\"form-control form-control-sm\" id=\"userSearch\"\r\n             minlength=\"3\"\r\n             name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" required type=\"text\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
 
 /***/ }),
 
@@ -421,16 +421,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _services_globals_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/globals.service */ "./src/app/services/globals.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/authentication.service */ "./src/app/services/authentication.service.ts");
+
+
 
 
 
 let AppComponent = class AppComponent {
-    constructor(globals) {
+    constructor(globals, router, authenticationService) {
         this.globals = globals;
+        this.router = router;
+        this.authenticationService = authenticationService;
         this.title = 'pCuisinHELHa';
     }
     ngOnInit() {
         this.globals.updateMobile();
+    }
+    logout() {
     }
     /**
      * On window resizing, updates the Globals service's "mobile" var.
@@ -441,7 +449,9 @@ let AppComponent = class AppComponent {
     }
 };
 AppComponent.ctorParameters = () => [
-    { type: _services_globals_service__WEBPACK_IMPORTED_MODULE_2__["GlobalsService"] }
+    { type: _services_globals_service__WEBPACK_IMPORTED_MODULE_2__["GlobalsService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_4__["AuthenticationService"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:resize', ['$event'])
@@ -469,24 +479,24 @@ AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var angular_font_awesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angular-font-awesome */ "./node_modules/angular-font-awesome/dist/angular-font-awesome.js");
-/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
-/* harmony import */ var _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/login-form/login-form.component */ "./src/app/components/login-form/login-form.component.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _components_recipe_search_bar_recipe_search_bar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/recipe-search-bar/recipe-search-bar.component */ "./src/app/components/recipe-search-bar/recipe-search-bar.component.ts");
-/* harmony import */ var _components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/recipe-result/recipe-result.component */ "./src/app/components/recipe-result/recipe-result.component.ts");
-/* harmony import */ var _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
-/* harmony import */ var _components_pages_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/pages/recipe-details/recipe-details.component */ "./src/app/components/pages/recipe-details/recipe-details.component.ts");
-/* harmony import */ var _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/account-modal/account-modal.component */ "./src/app/components/account-modal/account-modal.component.ts");
-/* harmony import */ var _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/pages/home/home.component */ "./src/app/components/pages/home/home.component.ts");
-/* harmony import */ var _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/pages/recipe-search/recipe-search.component */ "./src/app/components/pages/recipe-search/recipe-search.component.ts");
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
-/* harmony import */ var _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/pages/user-details/user-details.component */ "./src/app/components/pages/user-details/user-details.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_components_header_header_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/components/header/header.component */ "./src/app/components/header/header.component.ts");
+/* harmony import */ var _app_components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/components/login-form/login-form.component */ "./src/app/components/login-form/login-form.component.ts");
+/* harmony import */ var _app_components_recipe_search_bar_recipe_search_bar_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @app/components/recipe-search-bar/recipe-search-bar.component */ "./src/app/components/recipe-search-bar/recipe-search-bar.component.ts");
+/* harmony import */ var _app_components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
+/* harmony import */ var _app_components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/components/recipe-result/recipe-result.component */ "./src/app/components/recipe-result/recipe-result.component.ts");
+/* harmony import */ var _app_components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @app/components/account-modal/account-modal.component */ "./src/app/components/account-modal/account-modal.component.ts");
+/* harmony import */ var _app_pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @app/pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
+/* harmony import */ var _app_components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @app/components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
+/* harmony import */ var _app_components_pages_home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @app/components/pages/home */ "./src/app/components/pages/home/index.ts");
+/* harmony import */ var _app_components_pages_user_details__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @app/components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
+/* harmony import */ var _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @app/components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var angular_font_awesome__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! angular-font-awesome */ "./node_modules/angular-font-awesome/dist/angular-font-awesome.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _app_app_routing__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/app.routing */ "./src/app/app.routing.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 
 
 
@@ -509,30 +519,31 @@ __webpack_require__.r(__webpack_exports__);
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-            _components_header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
-            _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_6__["LoginFormComponent"],
-            _components_recipe_search_bar_recipe_search_bar_component__WEBPACK_IMPORTED_MODULE_8__["RecipeSearchBarComponent"],
-            _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_14__["RecipeSearchComponent"],
-            _components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_9__["RecipeResultComponent"],
-            _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_10__["RecipePipe"],
-            _components_pages_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__["RecipeDetailsComponent"],
-            _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_12__["AccountModalComponent"],
-            _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
-            _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_16__["UserDetailsComponent"],
-            _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_18__["RecipeCreateComponent"]
+            _app_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
+            _app_components_header_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"],
+            _app_components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_4__["LoginFormComponent"],
+            _app_components_recipe_search_bar_recipe_search_bar_component__WEBPACK_IMPORTED_MODULE_5__["RecipeSearchBarComponent"],
+            _app_components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__["RecipeSearchComponent"],
+            _app_components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_7__["RecipeResultComponent"],
+            _app_pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_9__["RecipePipe"],
+            _app_components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_10__["RecipeDetailsComponent"],
+            _app_components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_8__["AccountModalComponent"],
+            _app_components_pages_home__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+            _app_components_pages_user_details__WEBPACK_IMPORTED_MODULE_12__["UserDetailsComponent"],
+            _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_13__["RecipeCreateComponent"]
         ],
         imports: [
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            angular_font_awesome__WEBPACK_IMPORTED_MODULE_4__["AngularFontAwesomeModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
-            _app_routing__WEBPACK_IMPORTED_MODULE_15__["appRoutingModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"]
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["BrowserModule"],
+            angular_font_awesome__WEBPACK_IMPORTED_MODULE_15__["AngularFontAwesomeModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"],
+            _app_app_routing__WEBPACK_IMPORTED_MODULE_17__["appRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HttpClientModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_16__["ReactiveFormsModule"]
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+        bootstrap: [_app_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
     })
 ], AppModule);
 
@@ -555,8 +566,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pages/home */ "./src/app/components/pages/home/index.ts");
 /* harmony import */ var _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
 /* harmony import */ var _components_pages_user_details__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
-/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
-/* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
+/* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
+/* harmony import */ var _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
 
 
 
@@ -566,11 +577,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     { path: '', component: _components_pages_home__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
-    { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__["RecipeSearchComponent"] },
-    { path: 'recipe-search/:text', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__["RecipeSearchComponent"] },
+    { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_5__["RecipeSearchComponent"] },
+    { path: 'recipe-search/:text', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_5__["RecipeSearchComponent"] },
     { path: 'recipe-details/:id', component: _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_3__["RecipeDetailsComponent"] },
     { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_4__["UserDetailsComponent"] },
-    { path: 'recipe-create', component: _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_5__["RecipeCreateComponent"] },
+    { path: 'recipe-create', component: _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__["RecipeCreateComponent"] },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
@@ -607,8 +618,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AccountModalComponent = class AccountModalComponent {
-    constructor() { }
+    constructor() {
+    }
     ngOnInit() {
+        this.showModal();
     }
     showModal() {
         $("#accountModal").modal('show');
@@ -714,15 +727,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginFormComponent", function() { return LoginFormComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
 
 
 let LoginFormComponent = class LoginFormComponent {
-    constructor() {
-        this.COL_CLASSES_NOT_SIGNING_UP = "col-10 offset-1";
-        this.COL_CLASSES_SIGNING_UP = "col-6";
-        this._leftColClasses = this.COL_CLASSES_NOT_SIGNING_UP;
-    }
-    ngOnInit() {
+    constructor(fb) {
+        this.fb = fb;
+        this.LOGIN_PATTERN = "^(?=.*[a-zA-Z]{1,})(?=.*[\\d]{0,})[a-zA-Z0-9]{3,50}$";
+        this.PASSWORD_PATTERN = "^\\S*$";
+        this.NAME_PATTERN = "^[a-zA-Z]+(([' -][a-zA-Z ])?[a-zA-Z]*)*$";
+        /**
+         * Required, minLength(3), maxLength(50), only letters (caps or not) and numbers pattern.
+         */
+        this._loginCtrl = this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.LOGIN_PATTERN)]);
+        /**
+         * Required, minLength(3), maxLength(50) and no spaces pattern.
+         */
+        this._passwordCtrl = this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3),
+            _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.PASSWORD_PATTERN)]);
     }
     get isSigningUp() {
         return this._isSigningUp;
@@ -730,13 +754,81 @@ let LoginFormComponent = class LoginFormComponent {
     set isSigningUp(value) {
         this._isSigningUp = value;
     }
-    get leftColClasses() {
-        return this._leftColClasses;
+    /**
+     * Use the login form at first.
+     */
+    ngOnInit() {
+        // First use the login form
+        this.useLoginForm();
     }
-    set leftColClasses(value) {
-        this._leftColClasses = value;
+    authenticate() {
+    }
+    /********************************************************
+     ********************* FORM GROUP ************************
+     *********************************************************/
+    buildLoginFG() {
+        this._form = this.fb.group({
+            login: this._loginCtrl,
+            password: this._passwordCtrl,
+        });
+    }
+    /**
+     * Buils "form" as the sign up form.
+     * Use the "passwordsMatching" method as a validator.
+     */
+    buildSignupFG() {
+        this._form = this.fb.group({
+            login: this._loginCtrl,
+            email: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].email]),
+            password: this._passwordCtrl,
+            passwordConfirm: this.fb.control('').setValidators(this._passwordCtrl.validator),
+            firstName: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.NAME_PATTERN)]),
+            lastName: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.NAME_PATTERN)]),
+        }, { validator: this.passwordsMatching });
+    }
+    /**
+     * Verify that "password" and "passwordConfirm" are matching for the given AbstractControl.
+     * @param c
+     */
+    passwordsMatching(c) {
+        if (c.get('password').value !== c.get('passwordConfirm').value) {
+            return { invalid: true };
+        }
+    }
+    /**
+     * Sets _isSigningUp as true and builds the sign up FormGroup
+     */
+    useSignUpForm() {
+        this._isSigningUp = true;
+        this.buildSignupFG();
+    }
+    /**
+     * Sets _isSigningUp as false and builds the login FormGroup
+     */
+    useLoginForm() {
+        this._isSigningUp = false;
+        this.buildLoginFG();
+    }
+    /**
+     * @return Form validators are matching?
+     */
+    isFormValid() {
+        if (this._form == null)
+            return false;
+        return this._form.valid;
+    }
+    get form() {
+        return this._form;
+    }
+    set form(value) {
+        this._form = value;
     }
 };
+LoginFormComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+];
 LoginFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-login-form',
@@ -779,7 +871,8 @@ __webpack_require__.r(__webpack_exports__);
 let HomeComponent = 
 // @Component({ templateUrl: 'home.component.html' })
 class HomeComponent {
-    constructor() { }
+    constructor() {
+    }
     ngOnInit() {
     }
 };
@@ -857,7 +950,6 @@ let RecipeCreateComponent = class RecipeCreateComponent {
         this.loadIngredients();
     }
     loadIngredients() {
-        console.log("plop");
         const sub = this.ingredientService
             .query()
             .subscribe(ingredients => this._ingredients = ingredients);
@@ -1206,7 +1298,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let UserDetailsComponent = class UserDetailsComponent {
-    constructor() { }
+    constructor() {
+    }
     ngOnInit() {
     }
 };
@@ -1250,8 +1343,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let RecipeResultComponent = class RecipeResultComponent {
-    constructor() { }
-    ngOnInit() {
+    constructor() {
     }
     get recipe() {
         return this._recipe;
@@ -1265,6 +1357,8 @@ let RecipeResultComponent = class RecipeResultComponent {
     }
     set spices(value) {
         this._spices = value;
+    }
+    ngOnInit() {
     }
     updateSpice(nb) {
         this._spices = Array(nb).fill(0);
@@ -1316,13 +1410,15 @@ let RecipeSearchBarComponent = class RecipeSearchBarComponent {
     constructor() {
         this._userSearch = "";
     }
-    ngOnInit() {
-    }
     get userSearch() {
         return this._userSearch;
     }
     set userSearch(value) {
         this._userSearch = value;
+    }
+    ngOnInit() {
+    }
+    searchRecipe() {
     }
 };
 RecipeSearchBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -1432,6 +1528,53 @@ RecipePipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/services/authentication.service.ts":
+/*!****************************************************!*\
+  !*** ./src/app/services/authentication.service.ts ***!
+  \****************************************************/
+/*! exports provided: AuthenticationService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthenticationService", function() { return AuthenticationService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+
+let AuthenticationService = class AuthenticationService {
+    constructor(http) {
+        this.http = http;
+        this.USER_KEY = "currentUser";
+        this.currentUserSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](JSON.parse(localStorage.getItem(this.USER_KEY)));
+        this.currentUser = this.currentUserSubject.asObservable();
+    }
+    get currentUserValue() {
+        return this.currentUserSubject.value;
+    }
+    login(login, password) {
+        return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl}/users/authenticate`, { login, password });
+    }
+};
+AuthenticationService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
+];
+AuthenticationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthenticationService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/services/globals.service.ts":
 /*!*********************************************!*\
   !*** ./src/app/services/globals.service.ts ***!
@@ -1448,16 +1591,17 @@ var GlobalsService_1;
 
 
 let GlobalsService = GlobalsService_1 = class GlobalsService {
-    constructor() { }
-    /// MOBILE
-    updateMobile() {
-        this._mobile = window.screen.width <= GlobalsService_1.MOBILE_MAX_WIDTH;
+    constructor() {
     }
     get mobile() {
         return this._mobile;
     }
     set mobile(value) {
         this._mobile = value;
+    }
+    /// MOBILE
+    updateMobile() {
+        this._mobile = window.screen.width <= GlobalsService_1.MOBILE_MAX_WIDTH;
     }
 };
 GlobalsService.MOBILE_MAX_WIDTH = 420;
@@ -1714,6 +1858,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 
 const environment = {
+    apiUrl: 'http://localhost:4000',
     production: false
 };
 /*

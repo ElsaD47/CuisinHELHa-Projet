@@ -84,8 +84,6 @@ C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELH
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
-<<<<<<< HEAD
-=======
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -130,7 +128,6 @@ C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\Cu
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
->>>>>>> c0e1c31d13775ef16c4a721dd1ace61d53c682e8
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -191,3 +188,4 @@ C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\Cu
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+
