@@ -12,12 +12,15 @@ namespace CuisinHELHa.DTO
         public string Pseudo { get; set; }
         public string Mail { get; set; }
         public bool UserType { get; set; }
+        public string Password { get; set; }
+        public string Token { get; set; }
 
         public UsersDTO()
         {
         }
 
-        public UsersDTO(int idUser, string firstName, string lastName, string pseudo, string mail, bool userType)
+        public UsersDTO(int idUser, string firstName, string lastName, string pseudo, string mail, bool userType,
+            string password)
         {
             this.IdUser = idUser;
             FirstName = firstName;
@@ -25,6 +28,7 @@ namespace CuisinHELHa.DTO
             Pseudo = pseudo;
             Mail = mail;
             UserType = userType;
+            Password = password;
         }
 
         public UsersDTO(SqlDataReader reader)
@@ -35,6 +39,7 @@ namespace CuisinHELHa.DTO
             Pseudo = reader[UsersDAO.FIELD_PSEUDO].ToString();
             Mail = reader[UsersDAO.FIELD_MAIL].ToString();
             UserType = Convert.ToBoolean(reader[UsersDAO.FIELD_USERTYPE].ToString());
+            Password = reader[UsersDAO.FIELD_PASSWORD].ToString();
         }
     }
 }

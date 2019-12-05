@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
+  },
+  "projects": {
+    "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "projectName": "CuisinHELHa",
+        "projectPath": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "packagesPath": "C:\\Users\\Bastien\\.nuget\\packages\\",
+        "outputPath": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\obj\\",
+=======
     "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
   },
   "projects": {
@@ -12,9 +25,13 @@
         "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
+>>>>>>> c0e1c31d13775ef16c4a721dd1ace61d53c682e8
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Niborobin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Bastien\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -36,6 +53,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -47,6 +72,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.0-preview3.19551.4, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
             }
           },
           "imports": [

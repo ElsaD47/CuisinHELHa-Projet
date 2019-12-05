@@ -1,12 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using CuisinHELHa.DTO;
+using CuisinHELHa.Helpers;
 using CuisinHELHa.Models;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 
 namespace CuisinHELHa.DAO
 {
-    public class UsersDAO
+    public interface IUsersDAO
     {
+        UsersDTO Authenticate(string username, string password);
+        IEnumerable<UsersDTO> GetAll();
+    }
+    
+    public class UsersDAO : IUsersDAO
+    {
+        private readonly AppSettings _appSettings;
+
         private static readonly string TABLE_NAME = "users";
         public static readonly string FIELD_ID = "idUser";
         public static readonly string FIELD_FIRSTNAME = "firstName";
@@ -14,26 +30,68 @@ namespace CuisinHELHa.DAO
         public static readonly string FIELD_PSEUDO = "pseudo";
         public static readonly string FIELD_MAIL = "mail";
         public static readonly string FIELD_USERTYPE = "userType";
-        
+        public static readonly string FIELD_PASSWORD = "password";
+
         //Queries
         private static readonly string REQ_QUERY
             = $"SELECT * FROM {TABLE_NAME}";
 
         private static readonly string REQ_POST
-            = $"INSERT INTO {TABLE_NAME} ({FIELD_FIRSTNAME}, {FIELD_LASTNAME}, {FIELD_PSEUDO}, {FIELD_MAIL}, {FIELD_USERTYPE}) " +
+            = $"INSERT INTO {TABLE_NAME} ({FIELD_FIRSTNAME}, {FIELD_LASTNAME}, {FIELD_PSEUDO}, {FIELD_MAIL}, {FIELD_USERTYPE}, {FIELD_PASSWORD}) " +
               $"OUTPUT Inserted.{FIELD_ID} " +
-              $"VALUES(@{FIELD_FIRSTNAME}, @{FIELD_LASTNAME}, @{FIELD_PSEUDO}, @{FIELD_MAIL}, @{FIELD_USERTYPE})";
-        
-        private static readonly string REQ_DELETE
+              $"VALUES(@{FIELD_FIRSTNAME}, @{FIELD_LASTNAME}, @{FIELD_PSEUDO}, @{FIELD_MAIL}, @{FIELD_USERTYPE}, @{FIELD_PASSWORD})";
+
+        private static readonly string REQ_DELETE_BY_ID
             = $"DELETE FROM {TABLE_NAME} WHERE {FIELD_ID} = @{FIELD_ID}";
 
+        private static readonly string REQ_DELETE_BY_PSEUDO
+            = $"DELETE FROM {TABLE_NAME} WHERE {FIELD_PSEUDO} = @{FIELD_PSEUDO}";
+        
         private static readonly string REQ_UPDATE
             = $"UPDATE {TABLE_NAME} SET {FIELD_FIRSTNAME} = @{FIELD_FIRSTNAME}," +
               $"{FIELD_LASTNAME} = @{FIELD_LASTNAME}," +
               $"{FIELD_PSEUDO} = @{FIELD_PSEUDO}," +
               $"{FIELD_MAIL} = @{FIELD_MAIL}," +
               $"{FIELD_USERTYPE}= @{FIELD_USERTYPE} " +
+              $"{FIELD_PASSWORD}= @{FIELD_PASSWORD} " +
               $"WHERE {FIELD_ID} = @{FIELD_ID}";
+
+        
+        public UsersDAO(IOptions<AppSettings> appSettings)
+        {
+            _appSettings = appSettings.Value;
+        }
+        
+      public UsersDTO Authenticate(string username, string password){
+         var user = Query().SingleOrDefault(x => x.Pseudo == username && x.Password == password);
+
+         // return null if user not found
+         if (user == null)
+             return null;
+
+         // authentication successful so generate jwt token
+         var tokenHandler = new JwtSecurityTokenHandler();
+         var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+         var tokenDescriptor = new SecurityTokenDescriptor
+         {
+             Subject = new ClaimsIdentity(new Claim[] 
+             {
+                 new Claim(ClaimTypes.Name, user.IdUser.ToString())
+             }),
+             Expires = DateTime.UtcNow.AddDays(7),
+             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+         };
+         var token = tokenHandler.CreateToken(tokenDescriptor);
+         user.Token = tokenHandler.WriteToken(token);
+
+         return user.WithoutPassword();
+     }
+
+        public IEnumerable<UsersDTO> GetAll()
+        {
+            return Query().WithoutPasswords();
+        }
+
 
         public static List<UsersDTO> Query()
         {
@@ -48,9 +106,11 @@ namespace CuisinHELHa.DAO
 
                 while (reader.Read())
                 {
+                    Console.WriteLine(new UsersDTO(reader).Password);
                     users.Add(new UsersDTO(reader));
                 }
             }
+
             return users;
         }
 
@@ -67,12 +127,14 @@ namespace CuisinHELHa.DAO
                 command.Parameters.AddWithValue($@"{FIELD_PSEUDO}", user.Pseudo);
                 command.Parameters.AddWithValue($@"{FIELD_MAIL}", user.Mail);
                 command.Parameters.AddWithValue($@"{FIELD_USERTYPE}", user.UserType);
-                
+                command.Parameters.AddWithValue($@"{FIELD_PASSWORD}", user.Password);
+
                 user.IdUser = (int) command.ExecuteScalar();
             }
+
             return user;
         }
-        
+
         public static bool Delete(int id)
         {
             bool hasBeenDeleted = false;
@@ -81,12 +143,29 @@ namespace CuisinHELHa.DAO
             {
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
-                command.CommandText = REQ_DELETE;
+                command.CommandText = REQ_DELETE_BY_ID;
                 command.Parameters.AddWithValue($@"{FIELD_ID}", id);
                 hasBeenDeleted = command.ExecuteNonQuery() == 1;
             }
+
             return hasBeenDeleted;
-        } 
+        }
+
+        public static bool Delete(string pseudo)
+        {
+            bool hasBeenDeleted = false;
+            
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_DELETE_BY_PSEUDO;
+                command.Parameters.AddWithValue($@"{FIELD_PSEUDO}", pseudo);
+                hasBeenDeleted = command.ExecuteNonQuery() == 1;
+            }
+
+            return hasBeenDeleted;
+        }
         
         public static bool Update(UsersDTO user)
         {
@@ -101,14 +180,15 @@ namespace CuisinHELHa.DAO
                 command.Parameters.AddWithValue($@"{FIELD_PSEUDO}", user.Pseudo);
                 command.Parameters.AddWithValue($@"{FIELD_MAIL}", user.Mail);
                 command.Parameters.AddWithValue($@"{FIELD_USERTYPE}", user.UserType);
+                command.Parameters.AddWithValue($@"{FIELD_PASSWORD}", user.Password);
 
-                command.Parameters.AddWithValue($"{FIELD_ID}",user.IdUser );
+                command.Parameters.AddWithValue($"{FIELD_ID}", user.IdUser);
 
                 hasBeenChanged = command.ExecuteNonQuery() == 1;
             }
 
             return hasBeenChanged;
-
         }
+
     }
 }
