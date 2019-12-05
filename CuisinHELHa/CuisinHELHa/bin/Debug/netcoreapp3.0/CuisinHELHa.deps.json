@@ -28,6 +28,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.0.0",
           "Microsoft.AspNetCore.SpaServices.Extensions": "3.0.0",
           "Microsoft.Azure.Services.AppAuthentication": "1.3.1",
+          "System.Collections": "4.3.0",
           "System.Data.SqlClient": "4.8.0-preview3.19551.4",
           "System.IdentityModel.Tokens.Jwt": "5.6.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
@@ -1405,20 +1406,6 @@
       "System.Security.Cryptography.Pkcs/4.5.0": {
         "dependencies": {
           "System.Security.Cryptography.Cng": "4.5.0"
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.6.26515.6"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.6.26515.6"
-          }
         }
       },
       "System.Security.Cryptography.Primitives/4.3.0": {
