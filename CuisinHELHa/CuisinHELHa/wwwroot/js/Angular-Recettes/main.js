@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-account-modal></app-account-modal>\r\n<app-header></app-header>\r\n\r\n<router-outlet></router-outlet>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-account-modal></app-account-modal>\r\n<app-header></app-header>\r\n<router-outlet></router-outlet>\r\n");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-recipe-results-list></app-recipe-results-list>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n    <div *ngFor=\"let recipe of filteredRecipes\">\r\n        <app-recipe-result [recipe]=\"recipe\" [routerLink]=\"'/recipe-details/'+recipe.idRecipe\"></app-recipe-result>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -153,19 +153,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-results-list/recipe-results-list.component.html":
-/*!*************************************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-results-list/recipe-results-list.component.html ***!
-  \*************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n    <div *ngFor=\"let recipe of filteredRecipes\">\r\n        <app-recipe-result [recipe]=\"recipe\" (click)=\"loadRecipe(recipe)\"></app-recipe-result>\r\n    </div>\r\n</div>\r\n");
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-search-bar/recipe-search-bar.component.html":
 /*!*********************************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-search-bar/recipe-search-bar.component.html ***!
@@ -175,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" (ngSubmit)=\"searchRecipe()\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n     <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n      <fa name=\"search\"></fa>\r\n     </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input type=\"text\" id=\"userSearch\" name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" class=\"form-control form-control-sm\"\r\n             [(ngModel)]=\"userSearch\" minlength=\"3\" required #loginElement=\"ngModel\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" [routerLink]=\"'recipe-search/'+userSearch\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n     <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n      <fa name=\"search\"></fa>\r\n     </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input type=\"text\" id=\"userSearch\" name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" class=\"form-control form-control-sm\"\r\n             [(ngModel)]=\"userSearch\" minlength=\"3\" required #loginElement=\"ngModel\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
 
 /***/ }),
 
@@ -441,17 +428,6 @@ let AppComponent = class AppComponent {
     constructor(globals) {
         this.globals = globals;
         this.title = 'pCuisinHELHa';
-        this.nullRecipe = {
-            idRecipe: -1,
-            idUser: 1,
-            nameRecipe: "",
-            postDate: "",
-            summary: "",
-            persons: 0,
-            prepTime: 0,
-            spiceRate: 0,
-            recipeType: ""
-        };
     }
     ngOnInit() {
         this.globals.updateMobile();
@@ -501,18 +477,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/login-form/login-form.component */ "./src/app/components/login-form/login-form.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _components_recipe_search_bar_recipe_search_bar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/recipe-search-bar/recipe-search-bar.component */ "./src/app/components/recipe-search-bar/recipe-search-bar.component.ts");
-/* harmony import */ var _components_recipe_results_list_recipe_results_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/recipe-results-list/recipe-results-list.component */ "./src/app/components/recipe-results-list/recipe-results-list.component.ts");
-/* harmony import */ var _components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/recipe-result/recipe-result.component */ "./src/app/components/recipe-result/recipe-result.component.ts");
-/* harmony import */ var _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
-/* harmony import */ var _components_pages_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/pages/recipe-details/recipe-details.component */ "./src/app/components/pages/recipe-details/recipe-details.component.ts");
-/* harmony import */ var _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/account-modal/account-modal.component */ "./src/app/components/account-modal/account-modal.component.ts");
-/* harmony import */ var _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/pages/home/home.component */ "./src/app/components/pages/home/home.component.ts");
-/* harmony import */ var _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/pages/recipe-search/recipe-search.component */ "./src/app/components/pages/recipe-search/recipe-search.component.ts");
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
-/* harmony import */ var _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/pages/user-details/user-details.component */ "./src/app/components/pages/user-details/user-details.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
-
+/* harmony import */ var _components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/recipe-result/recipe-result.component */ "./src/app/components/recipe-result/recipe-result.component.ts");
+/* harmony import */ var _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
+/* harmony import */ var _components_pages_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/pages/recipe-details/recipe-details.component */ "./src/app/components/pages/recipe-details/recipe-details.component.ts");
+/* harmony import */ var _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/account-modal/account-modal.component */ "./src/app/components/account-modal/account-modal.component.ts");
+/* harmony import */ var _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/pages/home/home.component */ "./src/app/components/pages/home/home.component.ts");
+/* harmony import */ var _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/pages/recipe-search/recipe-search.component */ "./src/app/components/pages/recipe-search/recipe-search.component.ts");
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
+/* harmony import */ var _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/pages/user-details/user-details.component */ "./src/app/components/pages/user-details/user-details.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
 
 
 
@@ -541,22 +515,21 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _components_header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
             _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_6__["LoginFormComponent"],
             _components_recipe_search_bar_recipe_search_bar_component__WEBPACK_IMPORTED_MODULE_8__["RecipeSearchBarComponent"],
-            _components_recipe_results_list_recipe_results_list_component__WEBPACK_IMPORTED_MODULE_9__["RecipeResultsListComponent"],
-            _components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_10__["RecipeResultComponent"],
-            _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_11__["RecipePipe"],
-            _components_pages_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_12__["RecipeDetailsComponent"],
-            _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_13__["AccountModalComponent"],
-            _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_14__["HomeComponent"],
-            _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_15__["RecipeSearchComponent"],
-            _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_17__["UserDetailsComponent"],
-            _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_19__["RecipeCreateComponent"]
+            _components_pages_recipe_search_recipe_search_component__WEBPACK_IMPORTED_MODULE_14__["RecipeSearchComponent"],
+            _components_recipe_result_recipe_result_component__WEBPACK_IMPORTED_MODULE_9__["RecipeResultComponent"],
+            _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_10__["RecipePipe"],
+            _components_pages_recipe_details_recipe_details_component__WEBPACK_IMPORTED_MODULE_11__["RecipeDetailsComponent"],
+            _components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_12__["AccountModalComponent"],
+            _components_pages_home_home_component__WEBPACK_IMPORTED_MODULE_13__["HomeComponent"],
+            _components_pages_user_details_user_details_component__WEBPACK_IMPORTED_MODULE_16__["UserDetailsComponent"],
+            _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_18__["RecipeCreateComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             angular_font_awesome__WEBPACK_IMPORTED_MODULE_4__["AngularFontAwesomeModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
-            _app_routing__WEBPACK_IMPORTED_MODULE_16__["appRoutingModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HttpClientModule"]
+            _app_routing__WEBPACK_IMPORTED_MODULE_15__["appRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"]
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -580,10 +553,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _components_pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pages/home */ "./src/app/components/pages/home/index.ts");
-/* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
-/* harmony import */ var _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
-/* harmony import */ var _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
-/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+/* harmony import */ var _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
+/* harmony import */ var _components_pages_user_details__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
+/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+/* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
 
 
 
@@ -593,11 +566,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     { path: '', component: _components_pages_home__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
-    { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_3__["RecipeSearchComponent"] },
-    { path: 'recipe-details/:id', component: _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__["RecipeDetailsComponent"] },
-    { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__["UserDetailsComponent"] },
-    { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__["UserDetailsComponent"] },
-    { path: 'recipe-create', component: _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__["RecipeCreateComponent"] },
+    { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__["RecipeSearchComponent"] },
+    { path: 'recipe-search/:text', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_6__["RecipeSearchComponent"] },
+    { path: 'recipe-details/:id', component: _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_3__["RecipeDetailsComponent"] },
+    { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_4__["UserDetailsComponent"] },
+    { path: 'recipe-create', component: _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_5__["RecipeCreateComponent"] },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
@@ -867,15 +840,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeCreateComponent", function() { return RecipeCreateComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_ingredient_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../services/ingredient.service */ "./src/app/services/ingredient.service.ts");
+/* harmony import */ var _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../enumerations/recipe-type.enum */ "./src/app/enumerations/recipe-type.enum.ts");
+
+
 
 
 let RecipeCreateComponent = class RecipeCreateComponent {
-    constructor() { }
+    constructor(ingredientService) {
+        this.ingredientService = ingredientService;
+        this.filters = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_3__["RECIPE_TYPE"];
+        this._ingredients = [];
+        this.subscriptions = [];
+    }
     ngOnInit() {
+        this.loadIngredients();
+    }
+    loadIngredients() {
+        console.log("plop");
+        const sub = this.ingredientService
+            .query()
+            .subscribe(ingredients => this._ingredients = ingredients);
+        this.subscriptions.push(sub);
     }
     addRecipe() {
     }
+    get ingredients() {
+        return this._ingredients;
+    }
+    set ingredients(value) {
+        this._ingredients = value;
+    }
 };
+RecipeCreateComponent.ctorParameters = () => [
+    { type: _services_ingredient_service__WEBPACK_IMPORTED_MODULE_2__["IngredientService"] }
+];
 RecipeCreateComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-recipe-create',
@@ -955,13 +954,10 @@ let RecipeDetailsComponent = class RecipeDetailsComponent {
         this.subscriptions = [];
     }
     ngOnInit() {
-        console.log(this.route.paramMap);
         const sub = this.route.paramMap.subscribe(params => {
             this.idParam = params.get("id");
-            console.log(this.idParam);
             this.idRecipe = parseInt(this.idParam);
         });
-        console.log(this.idRecipe);
         this.subscriptions.push(sub);
         this.loadRecipe();
         this.loadIngredients();
@@ -1091,22 +1087,72 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeSearchComponent", function() { return RecipeSearchComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../enumerations/recipe-type.enum */ "./src/app/enumerations/recipe-type.enum.ts");
+/* harmony import */ var _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
+/* harmony import */ var _services_recipe_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../services/recipe.service */ "./src/app/services/recipe.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
-let RecipeSearchComponent = 
-// @Component({ templateUrl: 'recipe-search.component.html' })
-class RecipeSearchComponent {
-    constructor() { }
+
+
+
+
+let RecipeSearchComponent = class RecipeSearchComponent {
+    constructor(recipeService, route, router) {
+        this.recipeService = recipeService;
+        this.route = route;
+        this.router = router;
+        this.filterSelected = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ALL;
+        this.searchText = "";
+        this.filters = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RECIPE_TYPE_FILTER"];
+        this.subscriptions = [];
+    }
     ngOnInit() {
+        const sub = this.route.paramMap.subscribe(params => {
+            this.searchText = params.get("text");
+            if (this.searchText == null) {
+                this.searchText = "";
+            }
+            console.log(this.searchText);
+            this.loadRecipe();
+        });
+        this.subscriptions.push(sub);
+    }
+    get recipes() {
+        return this._recipes;
+    }
+    set recipes(value) {
+        this._recipes = value;
+        this.updateFilteredRecipes();
+    }
+    get filteredRecipes() {
+        return this._filteredRecipes;
+    }
+    set filteredRecipes(value) {
+        this._filteredRecipes = value;
+    }
+    updateFilteredRecipes() {
+        this._filteredRecipes = new _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_3__["RecipePipe"]()
+            .transform(this._recipes, this.filterSelected);
+    }
+    loadRecipe() {
+        const sub = this.recipeService
+            .queryText(this.searchText)
+            .subscribe(recipes => this.recipes = recipes);
+        this.subscriptions.push(sub);
     }
 };
+RecipeSearchComponent.ctorParameters = () => [
+    { type: _services_recipe_service__WEBPACK_IMPORTED_MODULE_4__["RecipeService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
+];
 RecipeSearchComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-recipe-search',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipe-search.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/pages/recipe-search/recipe-search.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipe-search.component.css */ "./src/app/components/pages/recipe-search/recipe-search.component.css")).default]
     })
-    // @Component({ templateUrl: 'recipe-search.component.html' })
 ], RecipeSearchComponent);
 
 
@@ -1239,112 +1285,6 @@ RecipeResultComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/components/recipe-results-list/recipe-results-list.component.css":
-/*!**********************************************************************************!*\
-  !*** ./src/app/components/recipe-results-list/recipe-results-list.component.css ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLXJlc3VsdHMtbGlzdC9yZWNpcGUtcmVzdWx0cy1saXN0LmNvbXBvbmVudC5jc3MifQ== */");
-
-/***/ }),
-
-/***/ "./src/app/components/recipe-results-list/recipe-results-list.component.ts":
-/*!*********************************************************************************!*\
-  !*** ./src/app/components/recipe-results-list/recipe-results-list.component.ts ***!
-  \*********************************************************************************/
-/*! exports provided: RecipeResultsListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeResultsListComponent", function() { return RecipeResultsListComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../enumerations/recipe-type.enum */ "./src/app/enumerations/recipe-type.enum.ts");
-/* harmony import */ var _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
-
-
-
-
-let RecipeResultsListComponent = class RecipeResultsListComponent {
-    constructor() {
-        this.MOCK_RECIPE = [{
-                idRecipe: 1,
-                idUser: 1,
-                nameRecipe: "tartine au beurre",
-                postDate: "30-11-2019",
-                summary: "recette simple pour une tartine au beurre",
-                persons: 1,
-                prepTime: 5,
-                spiceRate: 1,
-                recipeType: "Plat",
-                pseudo: "niborobin"
-            }];
-        this.filterSelected = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ALL;
-        this.recipeSelected = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.FILTERS = [{
-                id: "All",
-                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ALL
-            },
-            {
-                id: "Entrée",
-                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ENTREE
-            },
-            {
-                id: "Plat",
-                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].PLAT
-            },
-            {
-                id: "Dessert",
-                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].DESSERT
-            }];
-    }
-    ngOnInit() {
-        this.recipes = this.MOCK_RECIPE;
-    }
-    get recipes() {
-        return this._recipes;
-    }
-    set recipes(value) {
-        this._recipes = value;
-        this.updateFilteredRecipes();
-    }
-    get filteredRecipes() {
-        return this._filteredRecipes;
-    }
-    set filteredRecipes(value) {
-        this._filteredRecipes = value;
-    }
-    updateFilteredRecipes() {
-        this._filteredRecipes = new _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_3__["RecipePipe"]()
-            .transform(this._recipes, this.filterSelected);
-    }
-    loadRecipe(recipe) {
-        this.recipeSelected.next(recipe);
-    }
-};
-tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
-], RecipeResultsListComponent.prototype, "recipeSelected", void 0);
-tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
-], RecipeResultsListComponent.prototype, "recipes", null);
-RecipeResultsListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-recipe-results-list',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipe-results-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-results-list/recipe-results-list.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipe-results-list.component.css */ "./src/app/components/recipe-results-list/recipe-results-list.component.css")).default]
-    })
-], RecipeResultsListComponent);
-
-
-
-/***/ }),
-
 /***/ "./src/app/components/recipe-search-bar/recipe-search-bar.component.css":
 /*!******************************************************************************!*\
   !*** ./src/app/components/recipe-search-bar/recipe-search-bar.component.css ***!
@@ -1401,21 +1341,53 @@ RecipeSearchBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!**************************************************!*\
   !*** ./src/app/enumerations/recipe-type.enum.ts ***!
   \**************************************************/
-/*! exports provided: RecipeType */
+/*! exports provided: RecipeType, RECIPE_TYPE_FILTER, RECIPE_TYPE */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeType", function() { return RecipeType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECIPE_TYPE_FILTER", function() { return RECIPE_TYPE_FILTER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECIPE_TYPE", function() { return RECIPE_TYPE; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 
 var RecipeType;
 (function (RecipeType) {
-    RecipeType["ALL"] = "Tous";
-    RecipeType["ENTREE"] = "Entr\u00E9es";
-    RecipeType["PLAT"] = "Plats";
-    RecipeType["DESSERT"] = "Desserts";
+    RecipeType["ALL"] = "All";
+    RecipeType["ENTREE"] = "Starter";
+    RecipeType["PLAT"] = "Main course";
+    RecipeType["DESSERT"] = "Dessert";
 })(RecipeType || (RecipeType = {}));
+const RECIPE_TYPE_FILTER = [{
+        id: "All",
+        value: RecipeType.ALL
+    },
+    {
+        id: "Entrée",
+        value: RecipeType.ENTREE
+    },
+    {
+        id: "Plat",
+        value: RecipeType.PLAT
+    },
+    {
+        id: "Dessert",
+        value: RecipeType.DESSERT
+    }];
+const RECIPE_TYPE = [
+    {
+        id: "Entrée",
+        value: RecipeType.ENTREE
+    },
+    {
+        id: "Plat",
+        value: RecipeType.PLAT
+    },
+    {
+        id: "Dessert",
+        value: RecipeType.DESSERT
+    }
+];
 
 
 /***/ }),
@@ -1534,11 +1506,21 @@ let IngredientService = IngredientService_1 = class IngredientService {
     post(ingredient) {
         return this.http.post(IngredientService_1.URL, ingredient);
     }
+    postToRecipe(ingredient) {
+        return this.http.post(IngredientService_1.URL + "recipe", ingredient);
+    }
     put(ingredient) {
         return this.http.put(IngredientService_1.URL, ingredient);
     }
+    putInRecipe(ingredient) {
+        return this.http.put(IngredientService_1.URL + "recipe", ingredient);
+    }
     delete(id) {
         return this.http.delete(`${IngredientService_1.URL}/${id}`);
+    }
+    deleteFromRecipe(idRecipe, idIngredient) {
+        return this.http.delete(`${IngredientService_1.URL}/recipe=${idRecipe}/ingredient=${idIngredient}`);
+        ;
     }
 };
 IngredientService.URL = "/api/ingredients/";
