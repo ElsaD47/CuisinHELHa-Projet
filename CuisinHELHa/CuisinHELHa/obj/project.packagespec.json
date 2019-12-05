@@ -1,14 +1,11 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
     "projectName": "CuisinHELHa",
-    "projectPath": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
-    "outputPath": "C:\\_CS\\pCuisinHELHa\\CuisinHELHa\\CuisinHELHa\\obj\\",
+    "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
     "projectStyle": "PackageReference",
-    "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-    ],
     "originalTargetFrameworks": [
       "netcoreapp3.0"
     ],
