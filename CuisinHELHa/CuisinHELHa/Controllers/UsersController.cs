@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using CuisinHELHa.DAO;
 using CuisinHELHa.DTO;
 using CuisinHELHa.Models;
@@ -24,6 +25,12 @@ namespace CuisinHELHa.Controllers
         public IEnumerable<UsersDTO> Get()
         {
             return UsersDAO.Query();
+        }
+        
+        [HttpGet("integrity")]
+        public UsersDTO GetFirst()
+        {
+            return UsersDAO.Query().First();
         }
 
         [HttpPost]

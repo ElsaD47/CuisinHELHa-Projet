@@ -57,18 +57,13 @@
         <option value="$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" />
-=======
+
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" />
->>>>>>> 52da666296629a925080276f4465c4f2ea136014
+
       </list>
     </option>
   </component>
