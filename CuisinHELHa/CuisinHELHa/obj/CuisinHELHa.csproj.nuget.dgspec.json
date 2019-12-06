@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
+    "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
   },
   "projects": {
-    "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
+    "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "projectUniqueName": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "projectName": "CuisinHELHa",
-        "projectPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "projectPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
-        "outputPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
+        "outputPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niborobin\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.SpaServices.Extensions": {
               "target": "Package",

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "projectUniqueName": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
     "projectName": "CuisinHELHa",
-    "projectPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
-    "outputPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
+    "projectPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "outputPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
@@ -33,6 +33,10 @@
         "Microsoft.AspNetCore.Authentication.JwtBearer": {
           "target": "Package",
           "version": "[3.0.0, )"
+        },
+        "Microsoft.AspNetCore.Mvc": {
+          "target": "Package",
+          "version": "[2.2.0, )"
         },
         "Microsoft.AspNetCore.SpaServices.Extensions": {
           "target": "Package",

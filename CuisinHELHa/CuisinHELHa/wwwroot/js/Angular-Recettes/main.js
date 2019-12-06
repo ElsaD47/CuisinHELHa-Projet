@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-color shadow pt-2 pb-1\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row mb-2\">\r\n      <!--      Logo and login button for mobile-->\r\n      <div class=\"col-7 offset-1 d-flex justify-content-start\">\r\n        <a class=\"\" href=\"\">\r\n          <img [src]=\"LOGO_PATH\" alt=\"logo\"/>\r\n        </a>\r\n      </div>\r\n      <div class=\"col-4 d-flex justify-content-end pr-4\">\r\n        <div class=\"d-flex ml-3\">\r\n          <fa (click)=\"onLoginIconClick()\" class=\"my-auto\" name=\"user-circle\" size=\"2x\"></fa>\r\n        </div>\r\n      </div>\r\n\r\n      <!--      Login form-->\r\n      <!--      <div class=\"col-md-4 offset-md-6 pb-1\">-->\r\n      <!--        <app-login-form *ngIf=\"!mobile\"></app-login-form>-->\r\n      <!--        <app-login-form *ngIf=\"mobile && clickedLoginIcon\"></app-login-form>-->\r\n      <!--      </div>-->\r\n\r\n      <!--      Recipe search bar-->\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-12 col-sm-7 col-md-5 col-lg-4 col-xl-3\">\r\n        <app-recipe-search-bar></app-recipe-search-bar>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"main-color shadow pt-2 pb-1 mb-2\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row mb-2\">\r\n      <!--      Logo and login button for mobile-->\r\n      <div class=\"col-7 offset-1 d-flex justify-content-start\">\r\n        <a class=\"\" href=\"\">\r\n          <img [src]=\"LOGO_PATH\" alt=\"logo\"/>\r\n        </a>\r\n      </div>\r\n      <div class=\"col-4 d-flex justify-content-end pr-4\">\r\n        <div class=\"d-flex ml-3\">\r\n          <fa (click)=\"onLoginIconClick()\" class=\"my-auto\" name=\"user-circle\" size=\"2x\"></fa>\r\n        </div>\r\n      </div>\r\n\r\n      <!--      Login form-->\r\n      <!--      <div class=\"col-md-4 offset-md-6 pb-1\">-->\r\n      <!--        <app-login-form *ngIf=\"!mobile\"></app-login-form>-->\r\n      <!--        <app-login-form *ngIf=\"mobile && clickedLoginIcon\"></app-login-form>-->\r\n      <!--      </div>-->\r\n\r\n      <!--      Recipe search bar-->\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col-12 col-sm-7 col-md-5 col-lg-4 col-xl-3\">\r\n        <app-recipe-search-bar></app-recipe-search-bar>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form (ngSubmit)=\"authenticate()\" [formGroup]=\"form\" class=\"pb-2 mb-1 mb-sm-0 text-dark font-weight-bold\">\r\n  <div class=\"row\">\r\n    <!--    LEFT SIDE OF THE LOGIN-->\r\n    <div class=\"col-10 offset-1\">\r\n      <div class=\"row\">\r\n        <span class=\"col col-sm-3\">\r\n          <label for=\"login\">\r\n              Login:\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input class=\"form-control form-control-sm\" formControlName=\"login\" id=\"login\" name=\"login\" type=\"text\">\r\n        </span>\r\n      </div>\r\n      <div class=\"row mt-3\">\r\n        <span class=\"col\">\r\n          <label for=\"password\">\r\n              Password:\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input class=\"form-control form-control-sm\" formControlName=\"password\" id=\"password\" name=\"password\"\r\n                 type=\"password\">\r\n        </span>\r\n      </div>\r\n\r\n      <!--      EMAIL AND PASSWORD CONFIRMATION-->\r\n      <div *ngIf=\"isSigningUp\">\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"passwordConfirm\">\r\n                Confirm password:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"passwordConfirm\" id=\"passwordConfirm\" name=\"passwordConfirm\"\r\n                   type=\"password\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"firstName\">\r\n                First name:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"firstName\" id=\"firstName\" name=\"firstName\"\r\n                   type=\"firstName\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"lastName\">\r\n                Last name:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"lastName\" id=\"lastName\" name=\"lastName\"\r\n                   type=\"lastName\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"email\">\r\n                Email:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"email\" id=\"email\" name=\"email\" type=\"email\">\r\n          </span>\r\n        </div>\r\n      </div>\r\n\r\n      <!--      WHEN LOGGING-->\r\n      <div class=\"mt-4\">\r\n        <div *ngIf=\"!isSigningUp\" class=\"row\">\r\n          <div class=\"col d-flex justify-content-between\">\r\n            <div>\r\n              <button (click)=\"useSignUpForm()\" class=\"btn btn-sm btn-dark ml-1\">\r\n                <h6 class=\"d-inline font-weight-bold\">Sign-up</h6>\r\n              </button>\r\n            </div>\r\n            <div>\r\n              <button [disabled]=\"!isFormValid()\" class=\"btn btn-sm btn-dark mr-2\">\r\n                <!--              <button class=\"btn btn-sm btn-dark mr-2\">-->\r\n                <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n\r\n        <div *ngIf=\"isSigningUp\" class=\"row\">\r\n          <div class=\"col d-flex justify-content-between\">\r\n            <div>\r\n              <button (click)=\"useLoginForm()\" class=\"btn btn-sm btn-dark ml-1\">\r\n                <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n              </button>\r\n            </div>\r\n            <div>\r\n              <button [disabled]=\"!isFormValid()\" class=\"btn btn-sm btn-dark mr-2\">\r\n                <!--              <button class=\"btn btn-sm btn-dark mr-2\">-->\r\n                <h6 class=\"d-inline font-weight-bold\">Confirm</h6>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<form (ngSubmit)=\"onSubmit()\" [formGroup]=\"form\" class=\"pb-2 mb-1 mb-sm-0 text-dark font-weight-bold\">\r\n  <div class=\"row\">\r\n    <!--    LEFT SIDE OF THE LOGIN-->\r\n    <div class=\"col-10 offset-1\">\r\n      <div class=\"row\">\r\n        <span class=\"col col-sm-3\">\r\n          <label for=\"login\">\r\n              Login:\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input class=\"form-control form-control-sm\" formControlName=\"login\" id=\"login\" name=\"login\" type=\"text\">\r\n        </span>\r\n      </div>\r\n      <div class=\"row mt-3\">\r\n        <span class=\"col\">\r\n          <label for=\"password\">\r\n              Password:\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div class=\"row\">\r\n        <span class=\"col\">\r\n          <input class=\"form-control form-control-sm\" formControlName=\"password\" id=\"password\" name=\"password\"\r\n                 type=\"password\">\r\n        </span>\r\n      </div>\r\n\r\n      <!--      EMAIL AND PASSWORD CONFIRMATION-->\r\n      <div *ngIf=\"isSigningUp\">\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"passwordConfirm\">\r\n                Confirm password:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"passwordConfirm\" id=\"passwordConfirm\" name=\"passwordConfirm\"\r\n                   type=\"password\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"firstName\">\r\n                First name:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"firstName\" id=\"firstName\" name=\"firstName\"\r\n                   type=\"firstName\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"lastName\">\r\n                Last name:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"lastName\" id=\"lastName\" name=\"lastName\"\r\n                   type=\"lastName\">\r\n          </span>\r\n        </div>\r\n\r\n        <div class=\"row mt-3\">\r\n          <span class=\"col\">\r\n            <label for=\"email\">\r\n                Email:\r\n            </label>\r\n          </span>\r\n        </div>\r\n        <div class=\"row mb-3\">\r\n          <span class=\"col\">\r\n            <input class=\"form-control form-control-sm\" formControlName=\"email\" id=\"email\" name=\"email\" type=\"email\">\r\n          </span>\r\n        </div>\r\n      </div>\r\n\r\n      <!--      WHEN LOGGING-->\r\n      <div class=\"mt-4\">\r\n        <div *ngIf=\"!isSigningUp\" class=\"row\">\r\n          <div class=\"col d-flex justify-content-between\">\r\n            <div>\r\n              <button (click)=\"useSignUpForm()\" class=\"btn btn-sm btn-dark ml-1\">\r\n                <h6 class=\"d-inline font-weight-bold\">Sign-up</h6>\r\n              </button>\r\n            </div>\r\n            <div>\r\n              <button [disabled]=\"!isFormValid()\" class=\"btn btn-sm btn-dark mr-2\">\r\n                <!--              <button class=\"btn btn-sm btn-dark mr-2\">-->\r\n                <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n              </button>\r\n            </div>\r\n          </div>\r\n\r\n          <span (click)=\"testIntegrity()\">Integrity?</span>\r\n          <a href=\"/user-details\" class=\"ml-2\">User details</a>\r\n          <a href=\"/recipe-search\" class=\"ml-2\">Search</a>\r\n<!--          <a routerLink=\"/user-details\" class=\"ml-2\">User details</a>-->\r\n<!--          <a routerLink=\"/recipe-search\" class=\"ml-2\">Search</a>-->\r\n        </div>\r\n\r\n        <div *ngIf=\"isSigningUp\" class=\"row\">\r\n          <div class=\"col d-flex justify-content-between\">\r\n            <div>\r\n              <button (click)=\"useLoginForm()\" class=\"btn btn-sm btn-dark ml-1\">\r\n                <h6 class=\"d-inline font-weight-bold\">Login</h6>\r\n              </button>\r\n            </div>\r\n            <div>\r\n              <button [disabled]=\"!isFormValid()\" class=\"btn btn-sm btn-dark mr-2\">\r\n                <!--              <button class=\"btn btn-sm btn-dark mr-2\">-->\r\n                <h6 class=\"d-inline font-weight-bold\">Confirm</h6>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</form>\r\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1>BIENVENUE A LA MAISON</h1>\r\n\r\n<a href=\"recipe-search\">\r\n  RECHERCHE RECETTE\r\n</a>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1>BIENVENUE A LA MAISON</h1>\r\n");
 
 /***/ }),
 
@@ -110,7 +110,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = ("<h1>{{recipe.nameRecipe}}</h1>\n<h3 *ngFor=\"let s of spices\">*</h3>\n<h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\n{{recipe.summary}}<br>\n<i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\n<br>\ningrédients :\n<ul>\n    <li *ngFor=\"let ingredient of ingredients\">\n        {{ingredient.quantity}}{{ingredient.unit}} {{ingredient.nameIngredient}}\n    </li>\n</ul>\npréparation :\n<ul>\n    <li *ngFor=\"let step of steps\">\n        {{step.stepNb}} : {{step.step}}\n    </li>\n</ul>\n\n<app-review-form *ngIf=\"true; else guestUser;\" (reviewPosted)=\"postReview($event)\"></app-review-form>\n<div *ngFor=\"let review of reviews\">\n    <h6>{{review.pseudo}}</h6> ({{review.rate}}/5)\n    <p>{{review.reviewMessage}}</p>\n    <button *ngIf=\"type || idUser === review.idUser\" (click)=\"deleteReviewInDB(review)\">supprimer le commentaire</button>\n</div>\n\n<ng-template #guestUser>\n    <b>You must log in to post a review</b>\n</ng-template>\n");
+=======
+/* harmony default export */ __webpack_exports__["default"] = ("<h1>{{recipe.nameRecipe}}</h1>\r\n<h3 *ngFor=\"let s of spices\">*</h3>\r\n<h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\r\n{{recipe.summary}}<br>\r\n<i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\r\ningrédients :\r\n<ul>\r\n    <li *ngFor=\"let ingredient of ingredients\">\r\n        {{ingredient.quantity}}{{ingredient.unit}} {{ingredient.nameIngredient}}\r\n    </li>\r\n</ul>\r\npréparation :\r\n<ul>\r\n    <li *ngFor=\"let step of steps\">\r\n        {{step.stepNb}} : {{step.step}}\r\n    </li>\r\n</ul>\r\n\r\n<h5>Formulaire de commentaires</h5>\r\n\r\n<div *ngFor=\"let review of reviews\">\r\n    <h6>{{review.pseudo}}</h6> ({{review.rate}}/5)\r\n    <p>{{review.reviewMessage}}</p>\r\n</div>\r\n");
+>>>>>>> 9f2b21882dde27d2da8f492233d7249f85b247d0
 
 /***/ }),
 
@@ -123,7 +127,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n    <div *ngFor=\"let recipe of filteredRecipes\">\r\n        <app-recipe-result [recipe]=\"recipe\" (recipeDeleted)=\"deleteRecipeInDB($event)\"></app-recipe-result>\r\n    </div>\r\n</div>\r\n");
+=======
+/* harmony default export */ __webpack_exports__["default"] = ("<app-recipe-results-list></app-recipe-results-list>\r\n");
+>>>>>>> 9f2b21882dde27d2da8f492233d7249f85b247d0
 
 /***/ }),
 
@@ -136,6 +144,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = ("<div>\n    name : <h3>{{user.lastName}} \"{{user.pseudo}}\" {{user.firstName}}</h3>\n    mail : <h5>{{user.mail}}</h5>\n    password : <h5>{{passwordPlaceHolder}}</h5>\n    <h2>Recipes :</h2>\n    <div *ngFor=\"let recipe of recipes\" [routerLink]=\"'/recipe-details/'+recipe.idRecipe\">\n        <h3>{{recipe.nameRecipe}} (<app-recipe-avg-rate [idRecipe]=\"recipe.idRecipe\"></app-recipe-avg-rate>/5)</h3>\n    </div>\n    <div *ngFor=\"let review of reviews\" [routerLink]=\"'/recipe-details/'+review.idRecipe\">\n        {{review.nameRecipe}}({{review.rate}}/5) : <p>{{review.reviewMessage}}</p>\n    </div>\n</div>\n");
 
 /***/ }),
@@ -150,6 +159,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("{{avgRate}}\n");
+=======
+/* harmony default export */ __webpack_exports__["default"] = ("<p>user-details works!</p>\r\n");
+>>>>>>> 9f2b21882dde27d2da8f492233d7249f85b247d0
 
 /***/ }),
 
@@ -162,7 +174,27 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n  <div  [routerLink]=\"'/recipe-details/'+recipe.idRecipe\">\r\n  <h2>{{recipe.nameRecipe}} (<app-recipe-avg-rate [idRecipe]=\"recipe.idRecipe\"></app-recipe-avg-rate>/5)</h2>\r\n  <h3 *ngFor=\"let s of spices\">*</h3>\r\n  <h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\r\n  {{recipe.summary}}<br>\r\n  <i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\r\n  </div>\r\n  <button *ngIf=\"type || id === recipe.idUser\" (click)=\"deleteRecipe()\">X</button>\r\n</div>\r\n");
+=======
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n  <h2>{{recipe.nameRecipe}}</h2>\r\n  <h3 *ngFor=\"let s of spices\">*</h3>\r\n  <h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\r\n  {{recipe.summary}}<br>\r\n  <i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\r\n</div>\r\n");
+<<<<<<< HEAD
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-results-list/recipe-results-list.component.html":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-results-list/recipe-results-list.component.html ***!
+  \*************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n  <div *ngFor=\"let recipe of filteredRecipes\">\r\n    <app-recipe-result (click)=\"loadRecipe(recipe)\" [recipe]=\"recipe\"></app-recipe-result>\r\n  </div>\r\n</div>\r\n");
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
+>>>>>>> 9f2b21882dde27d2da8f492233d7249f85b247d0
 
 /***/ }),
 
@@ -175,6 +207,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
 /* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" (ngSubmit)=\"searchRecipe()\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n      <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n        <fa name=\"search\"></fa>\r\n      </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input #loginElement=\"ngModel\" [(ngModel)]=\"userSearch\" class=\"form-control form-control-sm\" id=\"userSearch\"\r\n             minlength=\"3\"\r\n             name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" required type=\"text\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
 
 /***/ }),
@@ -189,6 +222,13 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"_form\" (ngSubmit)=\"postReview()\">\n    <label for=\"rate\">Rating (X/5): </label>\n    <input id=\"rate\" type=\"number\" min=\"0\" max=\"5\" formControlName=\"rate\">\n    <label for=\"review\">Review : </label>\n    <textarea id=\"review\" formControlName=\"review\">\n    </textarea>\n    <button [disabled]=\"!_form.valid\">Post review</button>\n</form>\n");
+=======
+<<<<<<< HEAD
+/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" (ngSubmit)=\"searchRecipe()\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n      <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n        <fa name=\"search\"></fa>\r\n      </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input #loginElement=\"ngModel\" [(ngModel)]=\"userSearch\" class=\"form-control form-control-sm\" id=\"userSearch\"\r\n             minlength=\"3\"\r\n             name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" required type=\"text\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+=======
+/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" [routerLink]=\"'recipe-search/'+userSearch\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n      <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n        <fa name=\"search\"></fa>\r\n      </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input #loginElement=\"ngModel\" [(ngModel)]=\"userSearch\" class=\"form-control form-control-sm\" id=\"userSearch\"\r\n             minlength=\"3\"\r\n             name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" required type=\"text\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
+>>>>>>> 9f2b21882dde27d2da8f492233d7249f85b247d0
 
 /***/ }),
 
@@ -523,10 +563,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _app_app_routing__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/app.routing */ "./src/app/app.routing.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+<<<<<<< HEAD
 /* harmony import */ var _components_review_form_review_form_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/review-form/review-form.component */ "./src/app/components/review-form/review-form.component.ts");
 /* harmony import */ var _components_recipe_avg_rate_recipe_avg_rate_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/recipe-avg-rate/recipe-avg-rate.component */ "./src/app/components/recipe-avg-rate/recipe-avg-rate.component.ts");
 
 
+=======
+<<<<<<< HEAD
+/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+/* harmony import */ var _app_helpers_jwt_interceptor__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @app/helpers/jwt-interceptor */ "./src/app/helpers/jwt-interceptor.ts");
+/* harmony import */ var _app_helpers_error_interceptor__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @app/helpers/error-interceptor */ "./src/app/helpers/error-interceptor.ts");
+
+
+
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
+>>>>>>> 9f2b21882dde27d2da8f492233d7249f85b247d0
 
 
 
@@ -567,6 +619,20 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _components_recipe_avg_rate_recipe_avg_rate_component__WEBPACK_IMPORTED_MODULE_20__["RecipeAvgRateComponent"]
         ],
         imports: [
+<<<<<<< HEAD
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            angular_font_awesome__WEBPACK_IMPORTED_MODULE_4__["AngularFontAwesomeModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"],
+            _app_routing__WEBPACK_IMPORTED_MODULE_16__["appRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HttpClientModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["ReactiveFormsModule"]
+        ],
+        providers: [
+            { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HTTP_INTERCEPTORS"], useClass: _app_helpers_jwt_interceptor__WEBPACK_IMPORTED_MODULE_20__["JwtInterceptor"], multi: true },
+            { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HTTP_INTERCEPTORS"], useClass: _app_helpers_error_interceptor__WEBPACK_IMPORTED_MODULE_21__["ErrorInterceptor"], multi: true },
+        ],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+=======
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["BrowserModule"],
             angular_font_awesome__WEBPACK_IMPORTED_MODULE_15__["AngularFontAwesomeModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"],
@@ -576,6 +642,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         ],
         providers: [],
         bootstrap: [_app_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
     })
 ], AppModule);
 
@@ -596,10 +663,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _components_pages_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pages/home */ "./src/app/components/pages/home/index.ts");
+<<<<<<< HEAD
+/* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
+/* harmony import */ var _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
+/* harmony import */ var _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
+/* harmony import */ var _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+/* harmony import */ var _app_helpers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @app/helpers */ "./src/app/helpers/index.ts");
+
+=======
 /* harmony import */ var _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/pages/recipe-details */ "./src/app/components/pages/recipe-details/index.ts");
 /* harmony import */ var _components_pages_user_details__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/pages/user-details */ "./src/app/components/pages/user-details/index.ts");
 /* harmony import */ var _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/pages/recipe-search */ "./src/app/components/pages/recipe-search/index.ts");
 /* harmony import */ var _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @app/components/pages/recipe-create/recipe-create.component */ "./src/app/components/pages/recipe-create/recipe-create.component.ts");
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 
 
 
@@ -608,6 +684,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
+<<<<<<< HEAD
+    { path: 'home', component: _components_pages_home__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"], pathMatch: 'full' },
+    { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_3__["RecipeSearchComponent"] },
+    { path: 'recipe-details/:id', component: _components_pages_recipe_details__WEBPACK_IMPORTED_MODULE_4__["RecipeDetailsComponent"] },
+    { path: 'recipe-create', component: _components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__["RecipeCreateComponent"], canActivate: [_app_helpers__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    { path: 'user-details', component: _components_pages_user_details__WEBPACK_IMPORTED_MODULE_5__["UserDetailsComponent"], canActivate: [_app_helpers__WEBPACK_IMPORTED_MODULE_7__["AuthGuard"]] },
+    // If not a valid url -> redirect to home
+    { path: '**', redirectTo: 'home' }
+=======
     { path: '', component: _components_pages_home__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
     { path: 'recipe-search', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_5__["RecipeSearchComponent"] },
     { path: 'recipe-search/:text', component: _components_pages_recipe_search__WEBPACK_IMPORTED_MODULE_5__["RecipeSearchComponent"] },
@@ -616,6 +701,7 @@ const routes = [
     { path: 'recipe-create', component: _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_6__["RecipeCreateComponent"] },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 ];
 const appRoutingModule = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes);
 
@@ -760,15 +846,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+<<<<<<< HEAD
+/* harmony import */ var _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/authentication.service */ "./src/app/services/authentication.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+
+
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 
 
 
 let LoginFormComponent = class LoginFormComponent {
+<<<<<<< HEAD
+    constructor(fb, authService, router, route, http) {
+        this.fb = fb;
+        this.authService = authService;
+        this.router = router;
+        this.route = route;
+        this.http = http;
+        this.LOGIN_PATTERN = "^(?=.*[a-zA-Z]{1,})(?=.*[\\d]{0,})[a-zA-Z0-9]{3,50}$";
+        this.PASSWORD_PATTERN = "^\\S*$";
+        this.NAME_PATTERN = "^[a-zA-Z]+(([' -][a-zA-Z ])?[a-zA-Z]*)*$";
+        this._error = "";
+=======
     constructor(fb) {
         this.fb = fb;
         this.LOGIN_PATTERN = "^(?=.*[a-zA-Z]{1,})(?=.*[\\d]{0,})[a-zA-Z0-9]{3,50}$";
         this.PASSWORD_PATTERN = "^\\S*$";
         this.NAME_PATTERN = "^[a-zA-Z]+(([' -][a-zA-Z ])?[a-zA-Z]*)*$";
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
         /**
          * Required, minLength(3), maxLength(50), only letters (caps or not) and numbers pattern.
          */
@@ -779,6 +891,138 @@ let LoginFormComponent = class LoginFormComponent {
          */
         this._passwordCtrl = this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(3),
             _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.PASSWORD_PATTERN)]);
+<<<<<<< HEAD
+    }
+    testIntegrity() {
+        var test = `${_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].apiUrl}/api/users/integrity`;
+        // var test = `https://localhost:5001/api/users/integrity`;
+        console.log(test);
+        console.log(this.http.get(test));
+        return this.http.get(test).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(user => {
+            console.log(user);
+            return user;
+        }));
+    }
+    /**
+     * Use the login form at first and sets the return URL.
+     */
+    ngOnInit() {
+        // First use the login form
+        this.useLoginForm();
+        // get return url from route parameters or default to '/'
+        this._returnURL = this.route.snapshot.queryParams['returnUrl'] || '/';
+    }
+    /**
+     * On form submit, tries to log or connect the user.
+     */
+    onSubmit() {
+        this.submitted = true;
+        if (this._form.invalid) {
+            return;
+        }
+        this._loading = true;
+        if (!this._isSigningUp) {
+            this.authService.login(this.fgCtrls.login.value, this.fgCtrls.password.value)
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["first"])())
+                .subscribe(data => {
+                this.router.navigate([this._returnURL]);
+            }, error => {
+                this._error = error;
+                this.loading = false;
+            });
+        }
+        else {
+            console.log("NOT IMPLEMENTED YET");
+        }
+    }
+    /**
+     * Returns the form controls.
+     */
+    get fgCtrls() {
+        return this.form.controls;
+    }
+    /********************************************************
+     ********************* FORM GROUP ************************
+     *********************************************************/
+    /**
+     * Buils "form" as the login form.
+     */
+    buildLoginFG() {
+        this._form = this.fb.group({
+            login: this._loginCtrl,
+            password: this._passwordCtrl,
+        });
+        // Auto filling if in dev.
+        if (!_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].production) {
+            this.fgCtrls.login.setValue("ElsaD");
+            this.fgCtrls.password.setValue("adminElsa");
+        }
+    }
+    /**
+     * Buils "form" as the sign up form.
+     * Use the "passwordsMatching" method as a validator.
+     */
+    buildSignupFG() {
+        this._form = this.fb.group({
+            login: this._loginCtrl,
+            email: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].email]),
+            password: this._passwordCtrl,
+            passwordConfirm: this.fb.control('').setValidators(this._passwordCtrl.validator),
+            firstName: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.NAME_PATTERN)]),
+            lastName: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(50),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].pattern(this.NAME_PATTERN)]),
+        }, { validator: this.passwordsMatching });
+        // Random filling if in dev.
+        if (!_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].production) {
+            let rand = Math.floor(Math.random() * 1000000);
+            this.fgCtrls.login.setValue("test" + rand);
+            this.fgCtrls.password.setValue("password");
+            this.fgCtrls.passwordConfirm.setValue("password");
+            this.fgCtrls.firstName.setValue("first");
+            this.fgCtrls.lastName.setValue("last");
+            this.fgCtrls.email.setValue("test" + rand + "@gmail.com");
+            this.onSubmit();
+        }
+    }
+    /**
+     * Verify that "password" and "passwordConfirm" are matching for the given AbstractControl.
+     * @param c
+     */
+    passwordsMatching(c) {
+        if (c.get('password').value !== c.get('passwordConfirm').value) {
+            return { invalid: true };
+        }
+    }
+    /**
+     * Sets _isSigningUp as true and builds the sign up FormGroup
+     */
+    useSignUpForm() {
+        this._isSigningUp = true;
+        this.buildSignupFG();
+    }
+    /**
+     * Sets _isSigningUp as false and builds the login FormGroup
+     */
+    useLoginForm() {
+        this._isSigningUp = false;
+        this.buildLoginFG();
+    }
+    /**
+     * @return Form validators are matching?
+     */
+    isFormValid() {
+        if (this._form == null)
+            return false;
+        return this._form.valid;
+    }
+    get form() {
+        return this._form;
+    }
+    set form(value) {
+        this._form = value;
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
     }
     get isSigningUp() {
         return this._isSigningUp;
@@ -786,6 +1030,27 @@ let LoginFormComponent = class LoginFormComponent {
     set isSigningUp(value) {
         this._isSigningUp = value;
     }
+<<<<<<< HEAD
+    get submitted() {
+        return this._submitted;
+    }
+    set submitted(value) {
+        this._submitted = value;
+    }
+    get loading() {
+        return this._loading;
+    }
+    set loading(value) {
+        this._loading = value;
+    }
+};
+LoginFormComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+    { type: _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["ActivatedRoute"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClient"] }
+=======
     /**
      * Use the login form at first.
      */
@@ -860,6 +1125,7 @@ let LoginFormComponent = class LoginFormComponent {
 };
 LoginFormComponent.ctorParameters = () => [
     { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 ];
 LoginFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1238,6 +1504,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 
 
+<<<<<<< HEAD
+let RecipeSearchComponent = class RecipeSearchComponent {
+    constructor() {
+=======
 
 
 
@@ -1251,6 +1521,7 @@ let RecipeSearchComponent = class RecipeSearchComponent {
         this.searchText = "";
         this.filters = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RECIPE_TYPE_FILTER"];
         this.subscriptions = [];
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
     }
     ngOnInit() {
         const sub = this.route.paramMap.subscribe(params => {
@@ -1578,6 +1849,119 @@ RecipeResultComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./src/app/components/recipe-results-list/recipe-results-list.component.css":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/recipe-results-list/recipe-results-list.component.css ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLXJlc3VsdHMtbGlzdC9yZWNpcGUtcmVzdWx0cy1saXN0LmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/recipe-results-list/recipe-results-list.component.ts":
+/*!*********************************************************************************!*\
+  !*** ./src/app/components/recipe-results-list/recipe-results-list.component.ts ***!
+  \*********************************************************************************/
+/*! exports provided: RecipeResultsListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeResultsListComponent", function() { return RecipeResultsListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../enumerations/recipe-type.enum */ "./src/app/enumerations/recipe-type.enum.ts");
+/* harmony import */ var _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../pipes/recipe-pipe.pipe */ "./src/app/pipes/recipe-pipe.pipe.ts");
+
+
+
+
+let RecipeResultsListComponent = class RecipeResultsListComponent {
+    constructor() {
+        this.FILTERS = [{
+                id: "All",
+                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ALL
+            },
+            {
+                id: "Entrée",
+                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ENTREE
+            },
+            {
+                id: "Plat",
+                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].PLAT
+            },
+            {
+                id: "Dessert",
+                value: _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].DESSERT
+            }];
+        this.MOCK_RECIPE = [{
+                idRecipe: 1,
+                idUser: 1,
+                nameRecipe: "tartine au beurre",
+                postDate: "30-11-2019",
+                summary: "recette simple pour une tartine au beurre",
+                persons: 1,
+                prepTime: 5,
+                spiceRate: 1,
+                recipeType: "Plat",
+                pseudo: "niborobin"
+            }];
+        this.filterSelected = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RecipeType"].ALL;
+        this.recipeSelected = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.filters = _enumerations_recipe_type_enum__WEBPACK_IMPORTED_MODULE_2__["RECIPE_TYPE_FILTER"];
+    }
+    get recipes() {
+        return this._recipes;
+    }
+    set recipes(value) {
+        this._recipes = value;
+        this.updateFilteredRecipes();
+    }
+    get filteredRecipes() {
+        return this._filteredRecipes;
+    }
+    set filteredRecipes(value) {
+        this._filteredRecipes = value;
+    }
+    ngOnInit() {
+        this.recipes = this.MOCK_RECIPE;
+    }
+    updateFilteredRecipes() {
+        this._filteredRecipes = new _pipes_recipe_pipe_pipe__WEBPACK_IMPORTED_MODULE_3__["RecipePipe"]()
+            .transform(this._recipes, this.filterSelected);
+    }
+    loadRecipe(recipe) {
+        this.recipeSelected.next(recipe);
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], RecipeResultsListComponent.prototype, "FILTERS", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], RecipeResultsListComponent.prototype, "recipeSelected", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], RecipeResultsListComponent.prototype, "recipes", null);
+RecipeResultsListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-recipe-results-list',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipe-results-list.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-results-list/recipe-results-list.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipe-results-list.component.css */ "./src/app/components/recipe-results-list/recipe-results-list.component.css")).default]
+    })
+], RecipeResultsListComponent);
+
+
+
+/***/ }),
+
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 /***/ "./src/app/components/recipe-search-bar/recipe-search-bar.component.css":
 /*!******************************************************************************!*\
   !*** ./src/app/components/recipe-search-bar/recipe-search-bar.component.css ***!
@@ -1758,6 +2142,178 @@ const RECIPE_TYPE = [
         value: RecipeType.DESSERT
     }
 ];
+<<<<<<< HEAD
+
+
+/***/ }),
+
+/***/ "./src/app/helpers/auth-guard.ts":
+/*!***************************************!*\
+  !*** ./src/app/helpers/auth-guard.ts ***!
+  \***************************************/
+/*! exports provided: AuthGuard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuard", function() { return AuthGuard; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/authentication.service */ "./src/app/services/authentication.service.ts");
+
+
+
+
+let AuthGuard = class AuthGuard {
+    constructor(router, authService) {
+        this.router = router;
+        this.authService = authService;
+    }
+    canActivate(route, state) {
+        const currentUser = this.authService.currentUserValue;
+        if (currentUser) {
+            console.log("logged in");
+            return true;
+        }
+        else {
+            console.log("not logged in");
+        }
+        this.router.navigate([''], { queryParams: { returnURL: state.url } });
+        return false;
+    }
+};
+AuthGuard.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_3__["AuthenticationService"] }
+];
+AuthGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+], AuthGuard);
+
+
+
+/***/ }),
+
+/***/ "./src/app/helpers/error-interceptor.ts":
+/*!**********************************************!*\
+  !*** ./src/app/helpers/error-interceptor.ts ***!
+  \**********************************************/
+/*! exports provided: ErrorInterceptor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorInterceptor", function() { return ErrorInterceptor; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @app/services/authentication.service */ "./src/app/services/authentication.service.ts");
+
+
+
+
+
+let ErrorInterceptor = class ErrorInterceptor {
+    constructor(authService) {
+        this.authService = authService;
+    }
+    intercept(req, next) {
+        return next.handle(req).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(err => {
+            if (err.status === 401) {
+                // Auto logout if 401 response returned from api
+                this.authService.logout();
+                // location.reload(true);
+                location.reload();
+            }
+            const error = err.error.message || err.statusText;
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["throwError"])(error);
+        }));
+    }
+};
+ErrorInterceptor.ctorParameters = () => [
+    { type: _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_4__["AuthenticationService"] }
+];
+ErrorInterceptor = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+], ErrorInterceptor);
+
+
+
+/***/ }),
+
+/***/ "./src/app/helpers/index.ts":
+/*!**********************************!*\
+  !*** ./src/app/helpers/index.ts ***!
+  \**********************************/
+/*! exports provided: JwtInterceptor, ErrorInterceptor, AuthGuard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _auth_guard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth-guard */ "./src/app/helpers/auth-guard.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AuthGuard", function() { return _auth_guard__WEBPACK_IMPORTED_MODULE_1__["AuthGuard"]; });
+
+/* harmony import */ var _jwt_interceptor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./jwt-interceptor */ "./src/app/helpers/jwt-interceptor.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "JwtInterceptor", function() { return _jwt_interceptor__WEBPACK_IMPORTED_MODULE_2__["JwtInterceptor"]; });
+
+/* harmony import */ var _error_interceptor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./error-interceptor */ "./src/app/helpers/error-interceptor.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ErrorInterceptor", function() { return _error_interceptor__WEBPACK_IMPORTED_MODULE_3__["ErrorInterceptor"]; });
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/helpers/jwt-interceptor.ts":
+/*!********************************************!*\
+  !*** ./src/app/helpers/jwt-interceptor.ts ***!
+  \********************************************/
+/*! exports provided: JwtInterceptor */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JwtInterceptor", function() { return JwtInterceptor; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @app/services/authentication.service */ "./src/app/services/authentication.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+
+let JwtInterceptor = class JwtInterceptor {
+    constructor(authService) {
+        this.authService = authService;
+    }
+    intercept(req, next) {
+        let currentUser = this.authService.currentUserValue;
+        console.log("intercepted");
+        // If the user's connected and has a token, provides the token in the request header.
+        if (currentUser && currentUser.token) {
+            req = req.clone({
+                setHeaders: {
+                    Authorization: `Bearer ${currentUser.token}`
+                }
+            });
+        }
+        // Handles the request
+        return next.handle(req);
+    }
+};
+JwtInterceptor.ctorParameters = () => [
+    { type: _app_services_authentication_service__WEBPACK_IMPORTED_MODULE_1__["AuthenticationService"] }
+];
+JwtInterceptor = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])()
+], JwtInterceptor);
+
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 
 
 /***/ }),
@@ -1817,21 +2373,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @environments/environment */ "./src/environments/environment.ts");
+<<<<<<< HEAD
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+var AuthenticationService_1;
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 
 
 
 
 
+<<<<<<< HEAD
+
+let AuthenticationService = AuthenticationService_1 = class AuthenticationService {
+    constructor(http) {
+        this.http = http;
+        this.currentUserSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](JSON.parse(localStorage.getItem(AuthenticationService_1.USER_KEY)));
+=======
 let AuthenticationService = class AuthenticationService {
     constructor(http) {
         this.http = http;
         this.USER_KEY = "currentUser";
         this.currentUserSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["BehaviorSubject"](JSON.parse(localStorage.getItem(this.USER_KEY)));
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
         this.currentUser = this.currentUserSubject.asObservable();
     }
     get currentUserValue() {
         return this.currentUserSubject.value;
     }
+<<<<<<< HEAD
+    login(username, password) {
+        let authPath = `${_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl}${AuthenticationService_1.AUTH_API_PATH}`;
+        // let authPath = `https://localhost:5001${AuthenticationService.AUTH_API_PATH}`;
+        return this.http.post(authPath, { username, password })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(user => {
+            localStorage.setItem(AuthenticationService_1.USER_KEY, JSON.stringify(user));
+            this.currentUserSubject.next(user);
+            return user;
+        }));
+    }
+    logout() {
+        localStorage.removeItem(AuthenticationService_1.USER_KEY);
+        this.currentUserSubject.next(null);
+    }
+};
+AuthenticationService.AUTH_API_PATH = "/api/users/authenticate";
+AuthenticationService.USER_KEY = "currentUser";
+AuthenticationService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
+];
+AuthenticationService = AuthenticationService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+=======
     login(login, password) {
         return this.http.post(`${_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].apiUrl}/users/authenticate`, { login, password });
     }
@@ -1840,6 +2432,7 @@ AuthenticationService.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"] }
 ];
 AuthenticationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
         providedIn: 'root'
     })
@@ -2141,8 +2734,13 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 
 const environment = {
+<<<<<<< HEAD
+    production: false,
+    apiUrl: 'https://localhost:5001',
+=======
     apiUrl: 'http://localhost:4000',
     production: false
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -2191,7 +2789,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\Angular\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\_OthersProject\CuisineHELHa\Angular\src\main.ts */"./src/main.ts");
 
 
 /***/ })

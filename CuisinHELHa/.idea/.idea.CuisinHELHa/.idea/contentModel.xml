@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa" t="IncludeFlat">
+    <e p="C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa" t="IncludeFlat">
       <e p="CuisinHELHa" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
@@ -97,6 +97,6 @@
       <e p="packages" t="ExcludeRecursive" />
     </e>
     <e p="C:\Users\Niborobin\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Niborobin\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CuisinHELHa.1982815861.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Niborobin\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_CuisinHELHa.1297174450.00" t="ExcludeRecursive" />
   </component>
 </project>
