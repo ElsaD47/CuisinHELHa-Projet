@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<h1>{{recipe.nameRecipe}}</h1>\n<h3 *ngFor=\"let s of spices\">*</h3>\n<h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\n{{recipe.summary}}<br>\n<i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\ningrédients :\n<ul>\n    <li *ngFor=\"let ingredient of ingredients\">\n        {{ingredient.quantity}}{{ingredient.unit}} {{ingredient.nameIngredient}}\n    </li>\n</ul>\npréparation :\n<ul>\n    <li *ngFor=\"let step of steps\">\n        {{step.stepNb}} : {{step.step}}\n    </li>\n</ul>\n\n<h5>Formulaire de commentaires</h5>\n\n<div *ngFor=\"let review of reviews\">\n    <h6>{{review.pseudo}}</h6> ({{review.rate}}/5)\n    <p>{{review.reviewMessage}}</p>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<h1>{{recipe.nameRecipe}}</h1>\n<h3 *ngFor=\"let s of spices\">*</h3>\n<h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\n{{recipe.summary}}<br>\n<i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\n<br>\ningrédients :\n<ul>\n    <li *ngFor=\"let ingredient of ingredients\">\n        {{ingredient.quantity}}{{ingredient.unit}} {{ingredient.nameIngredient}}\n    </li>\n</ul>\npréparation :\n<ul>\n    <li *ngFor=\"let step of steps\">\n        {{step.stepNb}} : {{step.step}}\n    </li>\n</ul>\n\n<app-review-form *ngIf=\"true; else guestUser;\" (reviewPosted)=\"postReview($event)\"></app-review-form>\n<div *ngFor=\"let review of reviews\">\n    <h6>{{review.pseudo}}</h6> ({{review.rate}}/5)\n    <p>{{review.reviewMessage}}</p>\n    <button *ngIf=\"type || idUser === review.idUser\" (click)=\"deleteReviewInDB(review)\">supprimer le commentaire</button>\n</div>\n\n<ng-template #guestUser>\n    <b>You must log in to post a review</b>\n</ng-template>\n");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n    <div *ngFor=\"let recipe of filteredRecipes\">\r\n        <app-recipe-result [recipe]=\"recipe\" [routerLink]=\"'/recipe-details/'+recipe.idRecipe\"></app-recipe-result>\r\n    </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngFor=\"let filter of filters\">\r\n    <label [for]=\"filter.id\">{{filter.id}}</label>\r\n    <input type=\"radio\" [id]=\"filter.id\"[(ngModel)]=\"filterSelected\"\r\n        (change)=\"updateFilteredRecipes()\" [value]=\"filter.value\">\r\n</div>\r\n\r\n<div>\r\n    <div *ngFor=\"let recipe of filteredRecipes\">\r\n        <app-recipe-result [recipe]=\"recipe\" (recipeDeleted)=\"deleteRecipeInDB($event)\"></app-recipe-result>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -136,7 +136,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>user-details works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n    name : <h3>{{user.lastName}} \"{{user.pseudo}}\" {{user.firstName}}</h3>\n    mail : <h5>{{user.mail}}</h5>\n    password : <h5>{{passwordPlaceHolder}}</h5>\n    <h2>Recipes :</h2>\n    <div *ngFor=\"let recipe of recipes\" [routerLink]=\"'/recipe-details/'+recipe.idRecipe\">\n        <h3>{{recipe.nameRecipe}} (<app-recipe-avg-rate [idRecipe]=\"recipe.idRecipe\"></app-recipe-avg-rate>/5)</h3>\n    </div>\n    <div *ngFor=\"let review of reviews\" [routerLink]=\"'/recipe-details/'+review.idRecipe\">\n        {{review.nameRecipe}}({{review.rate}}/5) : <p>{{review.reviewMessage}}</p>\n    </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-avg-rate/recipe-avg-rate.component.html":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-avg-rate/recipe-avg-rate.component.html ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("{{avgRate}}\n");
 
 /***/ }),
 
@@ -149,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n  <h2>{{recipe.nameRecipe}}</h2>\r\n  <h3 *ngFor=\"let s of spices\">*</h3>\r\n  <h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\r\n  {{recipe.summary}}<br>\r\n  <i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n  <div  [routerLink]=\"'/recipe-details/'+recipe.idRecipe\">\r\n  <h2>{{recipe.nameRecipe}} (<app-recipe-avg-rate [idRecipe]=\"recipe.idRecipe\"></app-recipe-avg-rate>/5)</h2>\r\n  <h3 *ngFor=\"let s of spices\">*</h3>\r\n  <h4>{{recipe.recipeType}} pour {{recipe.persons}} personnes ({{recipe.prepTime}} min)</h4>\r\n  {{recipe.summary}}<br>\r\n  <i>postée le {{recipe.postDate}} par {{recipe.pseudo}}</i>\r\n  </div>\r\n  <button *ngIf=\"type || id === recipe.idUser\" (click)=\"deleteRecipe()\">X</button>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -162,7 +175,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" [routerLink]=\"'recipe-search/'+userSearch\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n      <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n        <fa name=\"search\"></fa>\r\n      </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input #loginElement=\"ngModel\" [(ngModel)]=\"userSearch\" class=\"form-control form-control-sm\" id=\"userSearch\"\r\n             minlength=\"3\"\r\n             name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" required type=\"text\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<form #formElement=\"ngForm\" (ngSubmit)=\"searchRecipe()\" class=\"pb-1 pl-1\">\r\n  <div class=\"row no-gutters\">\r\n    <div class=\"col-1 d-flex justify-content-end\">\r\n      <button [disabled]=\"formElement.invalid\" class=\"btn btn-sm btn-light\" type=\"submit\">\r\n        <fa name=\"search\"></fa>\r\n      </button>\r\n    </div>\r\n    <div class=\"col-11\">\r\n      <input #loginElement=\"ngModel\" [(ngModel)]=\"userSearch\" class=\"form-control form-control-sm\" id=\"userSearch\"\r\n             minlength=\"3\"\r\n             name=\"userSearch\" placeholder=\"Entrer une recette, un ingrédient, ...\" required type=\"text\">\r\n    </div>\r\n  </div>\r\n</form>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/review-form/review-form.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/review-form/review-form.component.html ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"_form\" (ngSubmit)=\"postReview()\">\n    <label for=\"rate\">Rating (X/5): </label>\n    <input id=\"rate\" type=\"number\" min=\"0\" max=\"5\" formControlName=\"rate\">\n    <label for=\"review\">Review : </label>\n    <textarea id=\"review\" formControlName=\"review\">\n    </textarea>\n    <button [disabled]=\"!_form.valid\">Post review</button>\n</form>\n");
 
 /***/ }),
 
@@ -497,6 +523,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _app_app_routing__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @app/app.routing */ "./src/app/app.routing.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _components_review_form_review_form_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/review-form/review-form.component */ "./src/app/components/review-form/review-form.component.ts");
+/* harmony import */ var _components_recipe_avg_rate_recipe_avg_rate_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/recipe-avg-rate/recipe-avg-rate.component */ "./src/app/components/recipe-avg-rate/recipe-avg-rate.component.ts");
+
+
 
 
 
@@ -532,7 +562,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _app_components_account_modal_account_modal_component__WEBPACK_IMPORTED_MODULE_8__["AccountModalComponent"],
             _app_components_pages_home__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
             _app_components_pages_user_details__WEBPACK_IMPORTED_MODULE_12__["UserDetailsComponent"],
-            _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_13__["RecipeCreateComponent"]
+            _app_components_pages_recipe_create_recipe_create_component__WEBPACK_IMPORTED_MODULE_13__["RecipeCreateComponent"],
+            _components_review_form_review_form_component__WEBPACK_IMPORTED_MODULE_19__["ReviewFormComponent"],
+            _components_recipe_avg_rate_recipe_avg_rate_component__WEBPACK_IMPORTED_MODULE_20__["RecipeAvgRateComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_14__["BrowserModule"],
@@ -1044,6 +1076,8 @@ let RecipeDetailsComponent = class RecipeDetailsComponent {
         this.route = route;
         this.router = router;
         this.subscriptions = [];
+        this.type = false;
+        this.idUser = 7;
     }
     ngOnInit() {
         const sub = this.route.paramMap.subscribe(params => {
@@ -1113,6 +1147,25 @@ let RecipeDetailsComponent = class RecipeDetailsComponent {
             .queryByRecipe(this.idRecipe)
             .subscribe(reviews => this.reviews = reviews);
         this.subscriptions.push(sub);
+    }
+    postReview($event) {
+        $event.idRecipe = this.recipe.idRecipe;
+        const sub = this.reviewService
+            .post($event)
+            .subscribe(() => this.loadReviews());
+        this.subscriptions.push(sub);
+    }
+    deleteReviewInDB(review) {
+        const sub = this.reviewService
+            .delete(review.idUser, review.idRecipe)
+            .subscribe(() => {
+            this.deleteReview(review);
+        });
+        this.subscriptions.push(sub);
+    }
+    deleteReview(review) {
+        const index = this.reviews.indexOf(review);
+        this.reviews.splice(index, 1);
     }
 };
 RecipeDetailsComponent.ctorParameters = () => [
@@ -1210,6 +1263,11 @@ let RecipeSearchComponent = class RecipeSearchComponent {
         });
         this.subscriptions.push(sub);
     }
+    ngOnDestroy() {
+        for (const sub of this.subscriptions) {
+            sub.unsubscribe();
+        }
+    }
     get recipes() {
         return this._recipes;
     }
@@ -1232,6 +1290,19 @@ let RecipeSearchComponent = class RecipeSearchComponent {
             .queryText(this.searchText)
             .subscribe(recipes => this.recipes = recipes);
         this.subscriptions.push(sub);
+    }
+    deleteRecipeInDB($event) {
+        const sub = this.recipeService
+            .delete($event.idRecipe)
+            .subscribe(() => {
+            this.deleteRecipe($event);
+        });
+        this.subscriptions.push(sub);
+    }
+    deleteRecipe(recipe) {
+        const index = this.recipes.indexOf(recipe);
+        this._recipes.splice(index, 1);
+        this.updateFilteredRecipes();
     }
 };
 RecipeSearchComponent.ctorParameters = () => [
@@ -1295,14 +1366,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserDetailsComponent", function() { return UserDetailsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_services_recipe_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/recipe.service */ "./src/app/services/recipe.service.ts");
+/* harmony import */ var _app_services_review_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @app/services/review.service */ "./src/app/services/review.service.ts");
+
+
 
 
 let UserDetailsComponent = class UserDetailsComponent {
-    constructor() {
+    constructor(recipeService, reviewService) {
+        this.recipeService = recipeService;
+        this.reviewService = reviewService;
+        this.user = {
+            idUser: 5,
+            firstName: "Robin",
+            lastName: "Roekens",
+            pseudo: "RobinR",
+            userType: true,
+            mail: "robin.roekens@outlook.com",
+            token: "////kfkhjkmdshfm"
+        };
+        this.subscriptions = [];
+        this.passwordPlaceHolder = "********";
     }
     ngOnInit() {
+        this.loadRecipe();
+        this.loadReview();
+    }
+    ngOnDestroy() {
+        for (const sub of this.subscriptions) {
+            sub.unsubscribe();
+        }
+    }
+    loadRecipe() {
+        const sub = this.recipeService
+            .queryUser(this.user.idUser)
+            .subscribe(recipes => this.recipes = recipes);
+        this.subscriptions.push(sub);
+    }
+    loadReview() {
+        const sub = this.reviewService
+            .queryUser(this.user.idUser)
+            .subscribe(reviews => this.reviews = reviews);
+        this.subscriptions.push(sub);
+    }
+    get reviews() {
+        return this._reviews;
+    }
+    set reviews(value) {
+        this._reviews = value;
+    }
+    get recipes() {
+        return this._recipes;
+    }
+    set recipes(value) {
+        this._recipes = value;
     }
 };
+UserDetailsComponent.ctorParameters = () => [
+    { type: _app_services_recipe_service__WEBPACK_IMPORTED_MODULE_2__["RecipeService"] },
+    { type: _app_services_review_service__WEBPACK_IMPORTED_MODULE_3__["ReviewService"] }
+];
 UserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-user-details',
@@ -1310,6 +1433,73 @@ UserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./user-details.component.css */ "./src/app/components/pages/user-details/user-details.component.css")).default]
     })
 ], UserDetailsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/recipe-avg-rate/recipe-avg-rate.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/components/recipe-avg-rate/recipe-avg-rate.component.css ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmVjaXBlLWF2Zy1yYXRlL3JlY2lwZS1hdmctcmF0ZS5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/recipe-avg-rate/recipe-avg-rate.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/recipe-avg-rate/recipe-avg-rate.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: RecipeAvgRateComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeAvgRateComponent", function() { return RecipeAvgRateComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _app_services_review_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @app/services/review.service */ "./src/app/services/review.service.ts");
+
+
+
+let RecipeAvgRateComponent = class RecipeAvgRateComponent {
+    constructor(reviewService) {
+        this.reviewService = reviewService;
+        this._idRecipe = -1;
+    }
+    ngOnInit() {
+        this.loadAvgRate();
+    }
+    loadAvgRate() {
+        const sub = this.reviewService
+            .queryAvgByRecipe(this.idRecipe)
+            .subscribe(avg => this.avgRate = avg);
+    }
+    get idRecipe() {
+        return this._idRecipe;
+    }
+    set idRecipe(value) {
+        this._idRecipe = value;
+    }
+};
+RecipeAvgRateComponent.ctorParameters = () => [
+    { type: _app_services_review_service__WEBPACK_IMPORTED_MODULE_2__["ReviewService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], RecipeAvgRateComponent.prototype, "idRecipe", null);
+RecipeAvgRateComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-recipe-avg-rate',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./recipe-avg-rate.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/recipe-avg-rate/recipe-avg-rate.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipe-avg-rate.component.css */ "./src/app/components/recipe-avg-rate/recipe-avg-rate.component.css")).default]
+    })
+], RecipeAvgRateComponent);
 
 
 
@@ -1344,6 +1534,9 @@ __webpack_require__.r(__webpack_exports__);
 
 let RecipeResultComponent = class RecipeResultComponent {
     constructor() {
+        this.recipeDeleted = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.id = 1;
+        this.type = true;
     }
     get recipe() {
         return this._recipe;
@@ -1363,7 +1556,13 @@ let RecipeResultComponent = class RecipeResultComponent {
     updateSpice(nb) {
         this._spices = Array(nb).fill(0);
     }
+    deleteRecipe() {
+        this.recipeDeleted.next(this.recipe);
+    }
 };
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], RecipeResultComponent.prototype, "recipeDeleted", void 0);
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
 ], RecipeResultComponent.prototype, "recipe", null);
@@ -1404,10 +1603,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RecipeSearchBarComponent", function() { return RecipeSearchBarComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 let RecipeSearchBarComponent = class RecipeSearchBarComponent {
-    constructor() {
+    constructor(router) {
+        this.router = router;
         this._userSearch = "";
     }
     get userSearch() {
@@ -1419,8 +1621,12 @@ let RecipeSearchBarComponent = class RecipeSearchBarComponent {
     ngOnInit() {
     }
     searchRecipe() {
+        this.router.navigateByUrl("/recipe-search/" + this.userSearch);
     }
 };
+RecipeSearchBarComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
 RecipeSearchBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-recipe-search-bar',
@@ -1428,6 +1634,74 @@ RecipeSearchBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./recipe-search-bar.component.css */ "./src/app/components/recipe-search-bar/recipe-search-bar.component.css")).default]
     })
 ], RecipeSearchBarComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/review-form/review-form.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/components/review-form/review-form.component.css ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvcmV2aWV3LWZvcm0vcmV2aWV3LWZvcm0uY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/components/review-form/review-form.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/review-form/review-form.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: ReviewFormComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReviewFormComponent", function() { return ReviewFormComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
+
+let ReviewFormComponent = class ReviewFormComponent {
+    constructor(fb) {
+        this.fb = fb;
+        this.reviewPosted = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this._form = this.fb.group({
+            rate: this.fb.control("", _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required),
+            review: this.fb.control("")
+        });
+    }
+    ngOnInit() {
+    }
+    postReview() {
+        this.reviewPosted.next({
+            idRecipe: -1,
+            idUser: 7,
+            rate: this._form.get("rate").value,
+            reviewMessage: this._form.get("review").value
+        });
+        this._form.reset();
+    }
+};
+ReviewFormComponent.ctorParameters = () => [
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])()
+], ReviewFormComponent.prototype, "reviewPosted", void 0);
+ReviewFormComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-review-form',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./review-form.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/review-form/review-form.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./review-form.component.css */ "./src/app/components/review-form/review-form.component.css")).default]
+    })
+], ReviewFormComponent);
 
 
 
@@ -1715,6 +1989,9 @@ let RecipeService = RecipeService_1 = class RecipeService {
     queryId(id) {
         return this.http.get(RecipeService_1.URL + "id=" + id);
     }
+    queryUser(id) {
+        return this.http.get(RecipeService_1.URL + "user=" + id);
+    }
     post(ingredient) {
         return this.http.post(RecipeService_1.URL, ingredient);
     }
@@ -1722,7 +1999,7 @@ let RecipeService = RecipeService_1 = class RecipeService {
         return this.http.put(RecipeService_1.URL, ingredient);
     }
     delete(id) {
-        return this.http.delete(`${RecipeService_1.URL}/${id}`);
+        return this.http.delete(`${RecipeService_1.URL}${id}`);
     }
 };
 RecipeService.search = "";
@@ -1767,14 +2044,20 @@ let ReviewService = ReviewService_1 = class ReviewService {
     queryByRecipe(id) {
         return this.http.get(ReviewService_1.URL + "recipe=" + id);
     }
+    queryUser(id) {
+        return this.http.get(ReviewService_1.URL + "user=" + id);
+    }
+    queryAvgByRecipe(id) {
+        return this.http.get(ReviewService_1.URL + "average/" + id);
+    }
     post(ingredient) {
         return this.http.post(ReviewService_1.URL, ingredient);
     }
     put(ingredient) {
         return this.http.put(ReviewService_1.URL, ingredient);
     }
-    delete(id) {
-        return this.http.delete(`${ReviewService_1.URL}/${id}`);
+    delete(idUser, idRecipe) {
+        return this.http.delete(`${ReviewService_1.URL}${idUser}/${idRecipe}`);
     }
 };
 ReviewService.URL = "/api/reviews/";

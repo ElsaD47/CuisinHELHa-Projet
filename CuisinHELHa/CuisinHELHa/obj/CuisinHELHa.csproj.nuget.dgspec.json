@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
+    "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
+    "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "projectUniqueName": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "projectName": "CuisinHELHa",
-        "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+        "projectPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
+        "outputPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niborobin\\AppData\\Roaming\\NuGet\\NuGet.Config"

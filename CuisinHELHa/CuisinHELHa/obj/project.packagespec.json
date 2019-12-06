@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "projectUniqueName": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
     "projectName": "CuisinHELHa",
-    "projectPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
-    "outputPath": "C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
+    "projectPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
+    "outputPath": "C:\\_OthersProject\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
