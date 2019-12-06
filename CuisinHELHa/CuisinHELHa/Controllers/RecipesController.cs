@@ -13,25 +13,28 @@ namespace CuisinHELHa.Controllers
     [Route("api/[controller]")]
     public class RecipesController : ControllerBase
     {
-
+        [AllowAnonymous]
         [HttpGet]
         public IEnumerable<RecipesDTO> Get()
         {
             return RecipesDAO.Query();
         }
         
+        [AllowAnonymous]
         [HttpGet("pseudo")]
         public IEnumerable<RecipesPseudoDTO> GetWithPseudo()
         {
             return RecipesDAO.QueryWithPseudo();
         }
         
+        [AllowAnonymous]
         [HttpGet("id={id}")]
         public IEnumerable<RecipesPseudoDTO> GetById(int id)
         {
             return RecipesDAO.QueryByIdWithPseudo(id);
         }
 
+        [AllowAnonymous]
         [HttpGet("text={text}")]
         public IEnumerable<RecipesPseudoDTO> GetById(string text)
         {

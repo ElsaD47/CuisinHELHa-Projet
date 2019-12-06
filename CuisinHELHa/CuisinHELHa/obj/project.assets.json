@@ -7275,10 +7275,13 @@
             "target": "Package",
             "version": "[1.3.1, )"
           },
+<<<<<<< HEAD
           "Microsoft.Extensions.Logging": {
             "target": "Package",
             "version": "[3.1.0, )"
           },
+=======
+>>>>>>> f3f8d26eee0cfa0b25a9a22e6987ab081c5b5332
           "System.Collections": {
             "target": "Package",
             "version": "[4.3.0, )"
@@ -7304,5 +7307,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Niborobin\\Desktop\\Cours\\Bloc 3\\Projets TI\\CuisinHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\CuisinHELHa.csproj.nuget.cache : After parsing a value an unexpected character was encountered: \". Path 'dgSpecHash', line 4, position 2."
+    }
+  ]
 }
