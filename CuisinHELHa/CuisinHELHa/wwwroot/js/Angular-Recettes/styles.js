@@ -414,9 +414,9 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\Angular\node_modules\bootstrap\dist\css\bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
-__webpack_require__(/*! C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\Angular\node_modules\font-awesome\css\font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
-module.exports = __webpack_require__(/*! C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\Angular\src\styles.css */"./src/styles.css");
+__webpack_require__(/*! C:\_OthersProject\CuisineHELHa\Angular\node_modules\bootstrap\dist\css\bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
+__webpack_require__(/*! C:\_OthersProject\CuisineHELHa\Angular\node_modules\font-awesome\css\font-awesome.css */"./node_modules/font-awesome/css/font-awesome.css");
+module.exports = __webpack_require__(/*! C:\_OthersProject\CuisineHELHa\Angular\src\styles.css */"./src/styles.css");
 
 
 /***/ })

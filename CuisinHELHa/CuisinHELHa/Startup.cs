@@ -35,8 +35,6 @@ namespace CuisinHELHa
 
             // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
-            Console.Write(appSettings.Secret);
-            
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
             services.AddAuthentication(x =>
             {
@@ -68,29 +66,33 @@ namespace CuisinHELHa
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
+            
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-
-            app.UseHttpsRedirection();
-
+            
             app.UseRouting();
-
+            
+            app.UseAuthentication();
+            app.UseAuthorization();
+            
             // global cors policy
             app.UseCors(x => x
                 .AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader());
-
-            app.UseAuthentication();
-            app.UseAuthorization();
             
             app.UseEndpoints(endpoints => {
+            app.UseSpa(spa => spa.Options.SourcePath = PATH_ANGULAR);
                 endpoints.MapControllers();
             });
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             
-            app.UseSpa(spa => spa.Options.SourcePath = PATH_ANGULAR);
         }
     }
 }
