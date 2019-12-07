@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using CuisinHELHa.DTO;
 using CuisinHELHa.Models;
@@ -17,6 +18,7 @@ namespace CuisinHELHa.DAO
         public static readonly string FIELD_USER_PSEUDO = "pseudo";
         
         private static readonly string TABLE_RECIPE_NAME = "recipes";
+        public static readonly string FIELD_NAME_RECIPE = "nameRecipe";
         
         //Queries
         private static readonly string REQ_QUERY
@@ -24,9 +26,18 @@ namespace CuisinHELHa.DAO
 
         private static readonly string REQ_QUERY_BY_RECIPE_WITH_PSEUDO 
             = $"SELECT rev.*, u.{FIELD_USER_PSEUDO} FROM {TABLE_NAME} rev " +
-              $"JOIN {TABLE_RECIPE_NAME} rec ON rev.{FIELD_ID_RECIPE} = rec.{FIELD_ID_RECIPE} " +
               $"JOIN {TABLE_USER_NAME} u ON rev.{FIELD_ID_USER} = u.{FIELD_ID_USER} " +
-              $"WHERE rec.{FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}";
+              $"WHERE rev.{FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}";
+
+        public static readonly string REQ_QUERY_BY_USER_ID_WITH_RECIPE_NAME
+            = $"SELECT rev.*, rec.{FIELD_NAME_RECIPE} FROM {TABLE_NAME} rev " +
+              $"JOIN {TABLE_RECIPE_NAME} rec ON rev.{FIELD_ID_RECIPE} = rec.{FIELD_ID_RECIPE} " +
+              $"WHERE rev.{FIELD_ID_USER} = @{FIELD_ID_USER}";
+
+        public static readonly string REQ_AVG_RATE_OF_RECIPE
+            = $"SELECT round(avg(cast(rev.{FIELD_RATE} as decimal(4,2))), 1) as 'avgRate' from {TABLE_NAME} rev " +
+              $"GROUP BY rev.{FIELD_ID_RECIPE} " +
+              $"HAVING rev.{FIELD_ID_RECIPE} = @{FIELD_ID_RECIPE}";
 
         private static readonly string REQ_POST
             = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_USER}, {FIELD_ID_RECIPE}, {FIELD_RATE}, {FIELD_REVIEW_MESSAGE}) " +
@@ -79,6 +90,43 @@ namespace CuisinHELHa.DAO
                 }
             }
             return reviews;
+        }
+        
+        public static List<ReviewsRecipeDTO> QueryByUserWithRecipeName(int id)
+        {
+            List<ReviewsRecipeDTO> reviews = new List<ReviewsRecipeDTO>();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_BY_USER_ID_WITH_RECIPE_NAME;
+
+                command.Parameters.AddWithValue($@"{FIELD_ID_USER}", id);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    reviews.Add(new ReviewsRecipeDTO(reader));
+                }
+            }
+            return reviews;
+        }
+        
+        public static double QueryAvgByRecipe(int id)
+        {
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_AVG_RATE_OF_RECIPE;
+
+                command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", id);
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                    return Convert.ToDouble(reader["avgRate"].ToString());
+            }
+            return 0;
         }
         
         public static ReviewsDTO Post(ReviewsDTO review)

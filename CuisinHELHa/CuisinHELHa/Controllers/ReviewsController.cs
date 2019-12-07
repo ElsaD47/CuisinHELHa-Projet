@@ -16,10 +16,23 @@ namespace CuisinHELHa.Controllers
         }
 
         [HttpGet("recipe={id}")]
-        public IEnumerable<ReviewsPseudoDTO> Get(int id)
+        public IEnumerable<ReviewsPseudoDTO> GetByRecipe(int id)
         {
             return ReviewsDAO.QueryByRecipeWithPseudo(id);
         }
+        
+        [HttpGet("user={id}")]
+        public IEnumerable<ReviewsRecipeDTO> GetByUser(int id)
+        {
+            return ReviewsDAO.QueryByUserWithRecipeName(id);
+        }
+        
+        [HttpGet("average/{id}")]
+        public double GetAvgByRecipe(int id)
+        {
+            return ReviewsDAO.QueryAvgByRecipe(id);
+        }
+
 
         //?
         [HttpPost]

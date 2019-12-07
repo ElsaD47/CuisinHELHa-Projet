@@ -31,6 +31,7 @@
           <e p="RecipesPseudoDTO.cs" t="Include" />
           <e p="ReviewsDTO.cs" t="Include" />
           <e p="ReviewsPseudoDTO.cs" t="Include" />
+          <e p="ReviewsRecipeDTO.cs" t="Include" />
           <e p="StepsDTO.cs" t="Include" />
           <e p="UsedIngredientsDTO.cs" t="Include" />
           <e p="UsersDTO.cs" t="Include" />

@@ -20,6 +20,9 @@ namespace CuisinHELHa.DAO
         
         private static readonly string TABLE_USER_NAME = "users";
         public static readonly string FIELD_USER_PSEUDO_USER = "pseudo";
+
+        private static readonly string TABLE_REVIEW_NAME = "reviews";
+        public static readonly string FIELD_REVIEW_RATE = "rate";
         
         //Queries
         private static readonly string REQ_QUERY
@@ -37,8 +40,11 @@ namespace CuisinHELHa.DAO
             = $"SELECT r.*, u.{FIELD_USER_PSEUDO_USER} FROM {TABLE_NAME} r " +
               $"JOIN {TABLE_USER_NAME} u ON r.{FIELD_ID_USER} = u.{FIELD_ID_USER} " +
               $"WHERE {FIELD_NAME_RECIPE} LIKE '%' + @{FIELD_NAME_RECIPE} + '%'";
-
         
+        private static readonly string REQ_QUERY_BY_USER
+            = $"SELECT r.* FROM {TABLE_NAME} r " +
+              $"WHERE r.{FIELD_ID_USER} = @{FIELD_ID_USER} ";
+
         private static readonly string REQ_POST
             = $"INSERT INTO {TABLE_NAME} ({FIELD_ID_USER}, {FIELD_NAME_RECIPE}, {FIELD_POSTDATE}, {FIELD_SUMMARY}, {FIELD_PERSONS}, {FIELD_PREPTIME}, {FIELD_SPICES_RATE}, {FIELD_RECIPE_TYPE}) " +
               $"OUTPUT Inserted.{FIELD_ID_RECIPE} " +
@@ -133,6 +139,26 @@ namespace CuisinHELHa.DAO
                 while (reader.Read())
                 {
                     recipes.Add(new RecipesPseudoDTO(reader));
+                }
+            }
+            return recipes;
+        }
+        
+        public static IEnumerable<RecipesDTO> QueryByUser(int id)
+        {
+            List<RecipesDTO> recipes = new List<RecipesDTO>();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_BY_USER;
+
+                command.Parameters.AddWithValue($@"{FIELD_ID_USER}", id);
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    recipes.Add(new RecipesDTO(reader));
                 }
             }
             return recipes;

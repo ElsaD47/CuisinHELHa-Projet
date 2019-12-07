@@ -84,8 +84,6 @@ C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELH
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\ASP.net (back_end)\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
-<<<<<<< HEAD
-=======
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -130,7 +128,6 @@ C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\Cu
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
->>>>>>> c0e1c31d13775ef16c4a721dd1ace61d53c682e8
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -194,6 +191,64 @@ C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\_CS\pCuisinHELHa\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Niborobin\Desktop\Cours\Bloc 3\Projets TI\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.exe
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.deps.json
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.runtimeconfig.json
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.runtimeconfig.dev.json
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\CuisinHELHa.pdb
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.NodeServices.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SpaServices.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.Azure.Services.AppAuthentication.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Microsoft.Win32.Registry.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.AccessControl.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.Principal.Windows.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csprojAssemblyReference.cache
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\staticwebassets\CuisinHELHa.StaticWebAssets.Manifest.cache
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\staticwebassets\CuisinHELHa.StaticWebAssets.xml
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.MvcApplicationPartsAssemblyInfo.cs
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.MvcApplicationPartsAssemblyInfo.cache
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.AssemblyInfoInputs.cache
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.AssemblyInfo.cs
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.RazorTargetAssemblyInfo.cache
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
+C:\_OthersProject\CuisinHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.Development.json
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\appsettings.json
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
@@ -233,7 +288,6 @@ C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.AccessControl.dll
-C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.Principal.Windows.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Text.Encoding.CodePages.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win-x64\nativeassets\netcoreapp2.2\aspnetcorev2_inprocess.dll
@@ -246,7 +300,6 @@ C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
-C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
@@ -261,3 +314,5 @@ C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.csproj.CopyComplete
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.dll
 C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\obj\Debug\netcoreapp3.0\CuisinHELHa.pdb
+C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\_OthersProject\CuisineHELHa\CS\CuisinHELHa\CuisinHELHa\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll

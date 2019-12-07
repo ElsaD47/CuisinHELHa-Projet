@@ -36,19 +36,27 @@ namespace CuisinHELHa.Controllers
 
         [AllowAnonymous]
         [HttpGet("text={text}")]
-        public IEnumerable<RecipesPseudoDTO> GetById(string text)
+        public IEnumerable<RecipesPseudoDTO> GetByText(string text)
         {
             text = text.Replace('_', ' ');
             return RecipesDAO.QueryByTextWithPseudo(text);
         }
-
         
+        [AllowAnonymous]
+        [HttpGet("user={id}")]
+        public IEnumerable<RecipesDTO> GetByUser(int id)
+        {
+            return RecipesDAO.QueryByUser(id);
+        }
+
+        [AllowAnonymous]
         [HttpPost]
         public RecipesDTO Post([FromBody] RecipesDTO recipesDto)
         {
             return RecipesDAO.Post(recipesDto);
         }
-
+        
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
@@ -70,6 +78,5 @@ namespace CuisinHELHa.Controllers
 
             return BadRequest();
         }
-        
     }
 }

@@ -38,6 +38,10 @@
           "target": "Package",
           "version": "[3.0.0, )"
         },
+        "Microsoft.AspNetCore.Mvc": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
         "Microsoft.AspNetCore.SpaServices.Extensions": {
           "target": "Package",
           "version": "[3.0.0, )"
