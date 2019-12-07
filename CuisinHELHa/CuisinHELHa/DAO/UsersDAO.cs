@@ -18,7 +18,7 @@ namespace CuisinHELHa.DAO
         UsersDTO Authenticate(string username, string password);
         IEnumerable<UsersDTO> GetAll();
     }
-    
+
     public class UsersDAO : IUsersDAO
     {
         private readonly AppSettings _appSettings;
@@ -35,6 +35,12 @@ namespace CuisinHELHa.DAO
         //Queries
         private static readonly string REQ_QUERY
             = $"SELECT * FROM {TABLE_NAME}";
+        
+        private static readonly string REQ_QUERY_BY_PSEUDO
+            = $"SELECT * FROM {TABLE_NAME} WHERE {FIELD_PSEUDO} = @{FIELD_PSEUDO}";
+
+        private static readonly string REQ_QUERY_BY_MAIL
+            = $"SELECT * FROM {TABLE_NAME} WHERE {FIELD_MAIL} = @{FIELD_MAIL}";
 
         private static readonly string REQ_POST
             = $"INSERT INTO {TABLE_NAME} ({FIELD_FIRSTNAME}, {FIELD_LASTNAME}, {FIELD_PSEUDO}, {FIELD_MAIL}, {FIELD_USERTYPE}, {FIELD_PASSWORD}) " +
@@ -43,10 +49,13 @@ namespace CuisinHELHa.DAO
 
         private static readonly string REQ_DELETE_BY_ID
             = $"DELETE FROM {TABLE_NAME} WHERE {FIELD_ID} = @{FIELD_ID}";
+        
+        private static readonly string REQ_DELETE_ALL_BUT_ADMIN
+            = $"DELETE FROM {TABLE_NAME} WHERE {FIELD_USERTYPE} = 0";
 
         private static readonly string REQ_DELETE_BY_PSEUDO
             = $"DELETE FROM {TABLE_NAME} WHERE {FIELD_PSEUDO} = @{FIELD_PSEUDO}";
-        
+
         private static readonly string REQ_UPDATE
             = $"UPDATE {TABLE_NAME} SET {FIELD_FIRSTNAME} = @{FIELD_FIRSTNAME}," +
               $"{FIELD_LASTNAME} = @{FIELD_LASTNAME}," +
@@ -56,43 +65,105 @@ namespace CuisinHELHa.DAO
               $"{FIELD_PASSWORD}= @{FIELD_PASSWORD} " +
               $"WHERE {FIELD_ID} = @{FIELD_ID}";
 
-        
+
         public UsersDAO(IOptions<AppSettings> appSettings)
         {
             _appSettings = appSettings.Value;
         }
-        
-      public UsersDTO Authenticate(string username, string password){
-         var user = Query().SingleOrDefault(x => x.Pseudo == username && x.Password == password);
 
-         // return null if user not found
-         if (user == null)
-             return null;
+        public UsersDTO Authenticate(string username, string password)
+        {
+            var user = Query().SingleOrDefault(x => x.Pseudo == username && x.Password == password);
 
-         // authentication successful so generate jwt token
-         var tokenHandler = new JwtSecurityTokenHandler();
-         var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
-         var tokenDescriptor = new SecurityTokenDescriptor
-         {
-             Subject = new ClaimsIdentity(new Claim[] 
-             {
-                 new Claim(ClaimTypes.Name, user.IdUser.ToString())
-             }),
-             Expires = DateTime.UtcNow.AddDays(7),
-             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-         };
-         var token = tokenHandler.CreateToken(tokenDescriptor);
-         user.Token = tokenHandler.WriteToken(token);
+            // return null if user not found
+            if (user == null)
+                return null;
 
-         return user.WithoutPassword();
-     }
+            // authentication successful so generate jwt token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.IdUser.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddDays(30),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            user.Token = tokenHandler.WriteToken(token);
+
+            return user.WithoutPassword();
+        }
 
         public IEnumerable<UsersDTO> GetAll()
         {
             return Query().WithoutPasswords();
         }
 
+        public static UsersDTO GetUserByPseudo(string pseudo)
+        {
+            UsersDTO user = new UsersDTO();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_BY_PSEUDO;
+                command.Parameters.AddWithValue($@"{FIELD_PSEUDO}", pseudo);
+                Console.WriteLine(command.CommandText);
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    if(reader.Read())
+                        user = new UsersDTO(reader);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
 
+            return user;
+        }
+        
+        public static UsersDTO GetUserByMail(string mail)
+        {
+            UsersDTO user = new UsersDTO();
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_QUERY_BY_MAIL;
+                command.Parameters.AddWithValue($@"{FIELD_MAIL}", mail);
+
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    if(reader.Read())
+                        user = new UsersDTO(reader);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+
+            return user;
+        }
+
+        public static void DeleteAllButAdmin()
+        {
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_DELETE_ALL_BUT_ADMIN;
+                command.ExecuteNonQuery();
+            }
+
+        }
         public static List<UsersDTO> Query()
         {
             List<UsersDTO> users = new List<UsersDTO>();
@@ -129,7 +200,15 @@ namespace CuisinHELHa.DAO
                 command.Parameters.AddWithValue($@"{FIELD_USERTYPE}", user.UserType);
                 command.Parameters.AddWithValue($@"{FIELD_PASSWORD}", user.Password);
 
-                user.IdUser = (int) command.ExecuteScalar();
+                try
+                {
+                    user.IdUser = (int) command.ExecuteScalar();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    return null;
+                }
             }
 
             return user;
@@ -154,7 +233,7 @@ namespace CuisinHELHa.DAO
         public static bool Delete(string pseudo)
         {
             bool hasBeenDeleted = false;
-            
+
             using (SqlConnection connection = DataBase.GetConnection())
             {
                 connection.Open();
@@ -166,7 +245,7 @@ namespace CuisinHELHa.DAO
 
             return hasBeenDeleted;
         }
-        
+
         public static bool Update(UsersDTO user)
         {
             bool hasBeenChanged = false;
@@ -189,6 +268,5 @@ namespace CuisinHELHa.DAO
 
             return hasBeenChanged;
         }
-
     }
 }

@@ -26,6 +26,10 @@
   "frameworks": {
     "netcoreapp3.0": {
       "dependencies": {
+        "Microsoft.AspNetCore": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
         "Microsoft.AspNetCore.Authentication": {
           "target": "Package",
           "version": "[2.2.0, )"

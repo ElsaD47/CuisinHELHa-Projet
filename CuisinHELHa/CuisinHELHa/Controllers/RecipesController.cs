@@ -38,7 +38,7 @@ namespace CuisinHELHa.Controllers
         [HttpGet("text={text}")]
         public IEnumerable<RecipesPseudoDTO> GetById(string text)
         {
-            text.Replace('_', ' ');
+            text = text.Replace('_', ' ');
             return RecipesDAO.QueryByTextWithPseudo(text);
         }
 
