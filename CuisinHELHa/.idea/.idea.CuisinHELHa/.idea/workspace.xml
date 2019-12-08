@@ -12,30 +12,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsedIngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/RecipesDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/ReviewsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/PicturesController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsedIngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsersDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/RecipesDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/IngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/PicturesDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/IngredientsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/PicturesController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/PicturesDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/ReviewsDAO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DAO/UsedIngredientsDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/UsersController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/ReviewsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/WeatherForecast.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/Controllers/IngredientsController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/StepsDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/PicturesDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/UsersDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CuisinHELHa/DTO/IngredientsDTO.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -57,13 +56,12 @@
         <option value="$PROJECT_DIR$/CuisinHELHa/DTO/ReviewsDTO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/UsersDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/StepsController.cs" />
-
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/StepsDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Controllers/RecipesController.cs" />
-        <option value="$PROJECT_DIR$/CuisinHELHa/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/CuisinHELHa/DAO/RecipesDAO.cs" />
         <option value="$PROJECT_DIR$/CuisinHELHa/Models/DataBase.cs" />
-
+        <option value="$PROJECT_DIR$/CuisinHELHa/CuisinHELHa.csproj" />
+        <option value="$PROJECT_DIR$/CuisinHELHa/Properties/launchSettings.json" />
       </list>
     </option>
   </component>
@@ -88,7 +86,71 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.CuisinHELHa">
+  <component name="RunManager" selected="Azure - Publish Web App.Deploy">
+    <configuration name="Deploy" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
+      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/CuisinHELHa/CuisinHELHa.csproj" />
+      <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="af6a5715-8084-4823-8907-6fc497b16008" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
+      <option name="AZURE_WEB_APP_ID" value="/subscriptions/af6a5715-8084-4823-8907-6fc497b16008/resourceGroups/recettes/providers/Microsoft.Web/sites/cuisinehelha" />
+      <option name="AZURE_WEB_APP_NAME" value="" />
+      <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/af6a5715-8084-4823-8907-6fc497b16008/resourceGroups/recettes/providers/Microsoft.Web/serverfarms/ASP-recettes-8676" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
+      <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
+      <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
+      <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="af6a5715-8084-4823-8907-6fc497b16008" />
+      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
+      <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
+      <option name="AZURE_SQL_DATABASE_ID" value="/subscriptions/af6a5715-8084-4823-8907-6fc497b16008/resourceGroups/recettes/providers/Microsoft.Sql/servers/cuisinhelha/databases/recipes" />
+      <option name="AZURE_SQL_DATABASE_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_SQL_DATABASE_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_SQL_SERVER" value="0" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ADMIN_LOGIN" value="Elsa" />
+      <option name="AZURE_SQL_DATABASE_LOCATION" value="eastus" />
+      <option name="AZURE_SQL_DATABASE_COLLATION" value="SQL_Latin1_General_CP1_CI_AS" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
+      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/CuisinHELHa/CuisinHELHa.csproj" />
+      <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="af6a5715-8084-4823-8907-6fc497b16008" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
+      <option name="AZURE_WEB_APP_ID" value="/subscriptions/af6a5715-8084-4823-8907-6fc497b16008/resourceGroups/recettes/providers/Microsoft.Web/sites/cuisinehelha" />
+      <option name="AZURE_WEB_APP_NAME" value="webapp-191208193144" />
+      <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="recettes" />
+      <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/af6a5715-8084-4823-8907-6fc497b16008/resourceGroups/recettes/providers/Microsoft.Web/serverfarms/ASP-recettes-8676" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="appsp-191208193144" />
+      <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
+      <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
+      <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="af6a5715-8084-4823-8907-6fc497b16008" />
+      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
+      <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
+      <option name="AZURE_SQL_DATABASE_ID" value="/subscriptions/af6a5715-8084-4823-8907-6fc497b16008/resourceGroups/recettes/providers/Microsoft.Sql/servers/cuisinhelha/databases/recipes" />
+      <option name="AZURE_SQL_DATABASE_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_SQL_DATABASE_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_SQL_SERVER" value="0" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ADMIN_LOGIN" value="Elsa" />
+      <option name="AZURE_SQL_DATABASE_LOCATION" value="eastus" />
+      <option name="AZURE_SQL_DATABASE_COLLATION" value="SQL_Latin1_General_CP1_CI_AS" />
+      <method v="2" />
+    </configuration>
     <configuration name="CuisinHELHa" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CuisinHELHa/CuisinHELHa.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.0" />
@@ -119,6 +181,11 @@
         <option name="Build" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.CuisinHELHa" />
+      <item itemvalue=".NET Launch Settings Profile.CuisinHELHa: IIS Express" />
+      <item itemvalue="Azure - Publish Web App.Deploy" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="showServicesTree" value="false" />
@@ -138,15 +205,10 @@
       <workItem from="1574526446948" duration="8102000" />
       <workItem from="1574615238055" duration="6549000" />
       <workItem from="1574762886976" duration="1354000" />
-<<<<<<< HEAD
-      <workItem from="1574781741728" duration="10796000" />
-      <workItem from="1575212273375" duration="3807000" />
-=======
       <workItem from="1574781741728" duration="8560000" />
       <workItem from="1574950535510" duration="371000" />
       <workItem from="1575216075570" duration="640000" />
       <workItem from="1575284081246" duration="3837000" />
->>>>>>> 52da666296629a925080276f4465c4f2ea136014
     </task>
     <servers />
   </component>

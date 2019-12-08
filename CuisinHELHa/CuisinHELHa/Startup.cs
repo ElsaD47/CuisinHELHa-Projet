@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +9,7 @@ using CuisinHELHa.DAO;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 
 namespace CuisinHELHa
@@ -20,7 +22,7 @@ namespace CuisinHELHa
         {
             Configuration = configuration;
         }
-
+        
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -66,11 +68,11 @@ namespace CuisinHELHa
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
+//            else
+//            {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
-            }
+//            }
             
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -88,11 +90,13 @@ namespace CuisinHELHa
                 .AllowAnyHeader());
             
             app.UseEndpoints(endpoints => {
-            app.UseSpa(spa => spa.Options.SourcePath = PATH_ANGULAR);
-                endpoints.MapControllers();
+                 app.UseSpa(spa => spa.Options.SourcePath = PATH_ANGULAR); 
+                 endpoints.MapControllers();
             });
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             
+            // Run on each request
+            app.Run(async (context) => { await context.Response.WriteAsync("Hooray. It didn't error out."); });
         }
     }
 }
