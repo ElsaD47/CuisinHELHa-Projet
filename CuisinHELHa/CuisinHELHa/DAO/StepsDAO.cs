@@ -61,7 +61,7 @@ namespace CuisinHELHa.DAO
             {
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
-                command.CommandText = REQ_QUERY;
+                command.CommandText = REQ_QUERY_BY_RECIPE;
                 command.Parameters.AddWithValue($@"{FIELD_ID_RECIPE}", id);
 
                 SqlDataReader reader = command.ExecuteReader();

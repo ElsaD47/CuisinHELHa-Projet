@@ -112,10 +112,10 @@ namespace CuisinHELHa.Controllers
         {
             if (UsersDAO.UpdatePassword(passwordDto))
             {
-                return Ok();
+                return Ok(true);
             }
 
-            return BadRequest();
+            return BadRequest(false);
         }
         
         [HttpPut("mail")]
@@ -123,10 +123,10 @@ namespace CuisinHELHa.Controllers
         {
             if (UsersDAO.UpdateMail(mailDto))
             {
-                return Ok();
+                return Ok(true);
             }
 
-            return BadRequest();
+            return BadRequest(false);
         }
     }
 }
