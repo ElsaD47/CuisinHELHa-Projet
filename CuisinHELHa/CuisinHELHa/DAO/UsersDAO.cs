@@ -64,6 +64,17 @@ namespace CuisinHELHa.DAO
               $"{FIELD_USERTYPE}= @{FIELD_USERTYPE} " +
               $"{FIELD_PASSWORD}= @{FIELD_PASSWORD} " +
               $"WHERE {FIELD_ID} = @{FIELD_ID}";
+        
+        private static readonly string REQ_UPDATE_PASSWORD
+            = $"UPDATE {TABLE_NAME} " +
+              $"SET {FIELD_PASSWORD}= @{FIELD_PASSWORD}New " +
+              $"WHERE {FIELD_ID} = @{FIELD_ID} " +
+              $"AND {FIELD_PASSWORD} = @{FIELD_PASSWORD}Old";
+
+        private static readonly string REQ_UPDATE_MAIL
+            = $"UPDATE {TABLE_NAME} " +
+              $"SET {FIELD_MAIL}= @{FIELD_MAIL} " +
+              $"WHERE {FIELD_ID} = @{FIELD_ID} ";
 
 
         public UsersDAO(IOptions<AppSettings> appSettings)
@@ -261,7 +272,44 @@ namespace CuisinHELHa.DAO
                 command.Parameters.AddWithValue($@"{FIELD_USERTYPE}", user.UserType);
                 command.Parameters.AddWithValue($@"{FIELD_PASSWORD}", user.Password);
 
-                command.Parameters.AddWithValue($"{FIELD_ID}", user.IdUser);
+                command.Parameters.AddWithValue($@"{FIELD_ID}", user.IdUser);
+
+                hasBeenChanged = command.ExecuteNonQuery() == 1;
+            }
+
+            return hasBeenChanged;
+        }
+        
+        public static bool UpdatePassword(PasswordDTO psw)
+        {
+            bool hasBeenChanged = false;
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_UPDATE_PASSWORD;
+                command.Parameters.AddWithValue($@"{FIELD_PASSWORD}Old", psw.PasswordOld);
+                command.Parameters.AddWithValue($@"{FIELD_PASSWORD}New", psw.PasswordNew);
+
+                command.Parameters.AddWithValue($@"{FIELD_ID}", psw.UserID);
+                
+                hasBeenChanged = command.ExecuteNonQuery() == 1;
+            }
+
+            return hasBeenChanged;
+        }
+        
+        public static bool UpdateMail(MailDTO mail)
+        {
+            bool hasBeenChanged = false;
+            using (SqlConnection connection = DataBase.GetConnection())
+            {
+                connection.Open();
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = REQ_UPDATE_MAIL;
+                command.Parameters.AddWithValue($@"{FIELD_MAIL}", mail.Mail);
+
+                command.Parameters.AddWithValue($@"{FIELD_ID}", mail.UserID);
 
                 hasBeenChanged = command.ExecuteNonQuery() == 1;
             }

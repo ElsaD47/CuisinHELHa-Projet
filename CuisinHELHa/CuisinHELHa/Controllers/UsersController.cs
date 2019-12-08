@@ -21,7 +21,7 @@ namespace CuisinHELHa.Controllers
         {
             _usersDAO = usersDao;
         }
-
+        
         [HttpGet]
         public IEnumerable<UsersDTO> Get()
         {
@@ -100,6 +100,28 @@ namespace CuisinHELHa.Controllers
         public ActionResult Put([FromBody] UsersDTO usersDto)
         {
             if (UsersDAO.Update(usersDto))
+            {
+                return Ok();
+            }
+
+            return BadRequest();
+        }
+        
+        [HttpPut("password")]
+        public ActionResult Put([FromBody] PasswordDTO passwordDto)
+        {
+            if (UsersDAO.UpdatePassword(passwordDto))
+            {
+                return Ok();
+            }
+
+            return BadRequest();
+        }
+        
+        [HttpPut("mail")]
+        public ActionResult Put([FromBody] MailDTO mailDto)
+        {
+            if (UsersDAO.UpdateMail(mailDto))
             {
                 return Ok();
             }

@@ -21,9 +21,6 @@ namespace CuisinHELHa.DAO
         private static readonly string TABLE_USER_NAME = "users";
         public static readonly string FIELD_USER_PSEUDO_USER = "pseudo";
 
-        private static readonly string TABLE_REVIEW_NAME = "reviews";
-        public static readonly string FIELD_REVIEW_RATE = "rate";
-        
         //Queries
         private static readonly string REQ_QUERY
                     = $"SELECT * FROM {TABLE_NAME}";
