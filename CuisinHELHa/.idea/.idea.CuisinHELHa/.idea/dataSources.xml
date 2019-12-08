@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Azure SQL Database Server - cuisinhelha" uuid="46c8ede1-0c29-4a65-ac51-a10de9b1083e">
+      <driver-ref>azure.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://cuisinhelha.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</jdbc-url>
+      <driver-properties>
+        <property name="applicationName" value="DataGrip" />
+        <property name="trustServerCertificate" value="false" />
+        <property name="encrypt" value="true" />
+        <property name="loginTimeout" value="30" />
+        <property name="hostNameInCertificate" value="*.database.windows.net" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

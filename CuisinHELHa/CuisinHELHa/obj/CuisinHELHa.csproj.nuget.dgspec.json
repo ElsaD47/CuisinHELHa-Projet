@@ -10,11 +10,14 @@
         "projectUniqueName": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
         "projectName": "CuisinHELHa",
         "projectPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
-        "packagesPath": "C:\\Users\\Niborobin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Bastien\\.nuget\\packages\\",
         "outputPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Niborobin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Bastien\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

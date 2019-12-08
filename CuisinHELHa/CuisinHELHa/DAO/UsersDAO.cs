@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Data.SqlClient;
 using System.Linq;
@@ -61,7 +62,7 @@ namespace CuisinHELHa.DAO
               $"{FIELD_LASTNAME} = @{FIELD_LASTNAME}," +
               $"{FIELD_PSEUDO} = @{FIELD_PSEUDO}," +
               $"{FIELD_MAIL} = @{FIELD_MAIL}," +
-              $"{FIELD_USERTYPE}= @{FIELD_USERTYPE} " +
+              $"{FIELD_USERTYPE}= @{FIELD_USERTYPE}," +
               $"{FIELD_PASSWORD}= @{FIELD_PASSWORD} " +
               $"WHERE {FIELD_ID} = @{FIELD_ID}";
         
@@ -120,12 +121,17 @@ namespace CuisinHELHa.DAO
             using (SqlConnection connection = DataBase.GetConnection())
             {
                 connection.Open();
+
+                
                 SqlCommand command = connection.CreateCommand();
                 command.CommandText = REQ_QUERY_BY_PSEUDO;
                 command.Parameters.AddWithValue($@"{FIELD_PSEUDO}", pseudo);
                 Console.WriteLine(command.CommandText);
                 try
                 {
+                    if (connection.State == ConnectionState.Broken)
+                        return null;
+                    
                     SqlDataReader reader = command.ExecuteReader();
                     if(reader.Read())
                         user = new UsersDTO(reader);

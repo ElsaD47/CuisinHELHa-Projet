@@ -65,6 +65,8 @@ namespace CuisinHELHa.Controllers
             if (user == null)
                 return BadRequest(new {message = "Username or password is incorrect."});
 
+            Console.WriteLine(user.IdUser);
+            Console.WriteLine(user.Pseudo);
             return Ok(user);
         }
 

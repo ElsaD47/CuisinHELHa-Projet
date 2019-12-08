@@ -39,13 +39,14 @@
         <e p="Helpers" t="Include">
           <e p="AppSettings.cs" t="Include" />
           <e p="ExtensionMethods.cs" t="Include" />
+          <e p="SHA256Hasher.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
           <e p="AuthenticateModel.cs" t="Include" />
           <e p="DataBase.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
+          <e p="Release" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="CuisinHELHa.AssemblyInfo.cs" t="Include" />
             </e>
@@ -54,6 +55,7 @@
         <e p="Pages" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
+          <e p="launchSettings - Copy.json" t="Include" />
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
@@ -61,6 +63,7 @@
         <e p="wwwroot" t="Include">
           <e p="js" t="Include">
             <e p="Angular-Recettes" t="Include">
+              <e p="3rdpartylicenses.txt" t="Include" />
               <e p="assets" t="Include">
                 <e p="img" t="Include">
                   <e p="createRecipe.jpg" t="Include" />
@@ -69,26 +72,18 @@
                   <e p="logo-helha.png" t="Include" />
                 </e>
               </e>
-              <e p="createRecipeFull.jpg" t="Include" />
-              <e p="favicon.ico" t="Include" />
-              <e p="fontawesome-webfont.eot" t="Include" />
-              <e p="fontawesome-webfont.svg" t="Include" />
-              <e p="fontawesome-webfont.ttf" t="Include" />
-              <e p="fontawesome-webfont.woff" t="Include" />
-              <e p="fontawesome-webfont.woff2" t="Include" />
+              <e p="createRecipeFull.554fb05c4d220778f3ed.jpg" t="Include" />
+              <e p="fontawesome-webfont.674f50d287a8c48dc19b.eot" t="Include" />
+              <e p="fontawesome-webfont.912ec66d7572ff821749.svg" t="Include" />
+              <e p="fontawesome-webfont.af7ae505a9eed503f8b8.woff2" t="Include" />
+              <e p="fontawesome-webfont.b06871f281fee6b241d6.ttf" t="Include" />
+              <e p="fontawesome-webfont.fee66e712a8a08eef580.woff" t="Include" />
               <e p="index.html" t="Include" />
-              <e p="main.js" t="Include" />
-              <e p="main.js.map" t="Include" />
-              <e p="polyfills.js" t="Include" />
-              <e p="polyfills.js.map" t="Include" />
-              <e p="runtime.js" t="Include" />
-              <e p="runtime.js.map" t="Include" />
-              <e p="scripts.js" t="Include" />
-              <e p="scripts.js.map" t="Include" />
-              <e p="styles.js" t="Include" />
-              <e p="styles.js.map" t="Include" />
-              <e p="vendor.js" t="Include" />
-              <e p="vendor.js.map" t="Include" />
+              <e p="main.40ceeb9670affd329315.js" t="Include" />
+              <e p="polyfills.3c79a0eafef8c32a399a.js" t="Include" />
+              <e p="runtime.edb2fcf2778e7bf1d426.js" t="Include" />
+              <e p="scripts.584061c84cca79c079f4.js" t="Include" />
+              <e p="styles.b0b3ac298f5d8881fd3b.css" t="Include" />
             </e>
           </e>
         </e>

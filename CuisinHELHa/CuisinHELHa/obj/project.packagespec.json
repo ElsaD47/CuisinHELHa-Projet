@@ -6,6 +6,9 @@
     "projectPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\CuisinHELHa.csproj",
     "outputPath": "C:\\_OthersProject\\CuisineHELHa\\CS\\CuisinHELHa\\CuisinHELHa\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp3.0"
     ],
